@@ -81,8 +81,21 @@ $conhecimentos = Get-ChildItem -Path "$vault\03-conhecimento" -Recurse -Filter "
 Write-Host "  📊 Projetos: $($projetos.Count) | Áreas de conhecimento: $($conhecimentos.Count)" -ForegroundColor Cyan
 Write-Host ""
 
-# ─── 5. index.md atualizado ───
-Write-Host "── 5. index.md atualizado ──" -ForegroundColor Yellow
+# ─── 5. READMEs com links de volta ───
+Write-Host "── 5. READMEs com links de volta ──" -ForegroundColor Yellow
+Get-ChildItem -Path "$vault\03-conhecimento" -Recurse -Filter "README.md" | ForEach-Object {
+    $rel = [System.IO.Path]::GetRelativePath($vault, $_.FullName)
+    $content = Get-Content $_.FullName -Raw -ErrorAction SilentlyContinue
+    if ($content -notmatch 'Projetos relacionados|02-projetos') {
+        Write-Host "  ⚠️  README sem link para projetos: $rel" -ForegroundColor Yellow
+        $allOk = $false
+    }
+}
+Write-Host "  ✅ Verificado" -ForegroundColor Green
+Write-Host ""
+
+# ─── 6. index.md atualizado ───
+Write-Host "── 6. index.md atualizado ──" -ForegroundColor Yellow
 $indexContent = Get-Content "$vault\index.md" -Raw
 $indexDate = if ($indexContent -match 'Atualizado:\s*(\d{4}-\d{2}-\d{2})') { $matches[1] } else { "desconhecida" }
 $today = Get-Date -Format "yyyy-MM-dd"

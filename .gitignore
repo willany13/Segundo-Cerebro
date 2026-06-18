@@ -4,6 +4,7 @@ Thumbs.db
 
 # Obsidian
 .obsidian/workspace.json
+.obsidian/graph.json
 .obsidian/cache/
 .obsidian/plugins/
 .obsidian/themes/

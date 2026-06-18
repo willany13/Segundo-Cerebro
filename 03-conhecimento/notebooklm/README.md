@@ -8,6 +8,11 @@ tags:
 Notas geradas a partir de notebooks do Google NotebookLM, sincronizadas via
 `notebooklm-skill` ou `notebook-to-md`.
 
+## Projetos relacionados
+
+- [[02-projetos/skill-hermes.md]] — skill notebooklm-skill e notebook-to-md
+- [[02-projetos/projetos-de-ia.md]] — experimentos com NotebookLM + Claude
+
 ## Origem
 - Skill: [[../../Skill-Hermes/notebooklm-skill/README.md|notebooklm-skill]]
 - Skill: [[../../Skill-Hermes/notebook-to-md/SKILL.md|notebook-to-md]]

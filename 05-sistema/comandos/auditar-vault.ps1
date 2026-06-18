@@ -130,7 +130,20 @@ Get-ChildItem -Recurse -Filter "*.md" -File | Where-Object {
     }
 }
 
-# ─── 6. Git health ───
+# ─── 6. READMEs ───
+Write-Host "── 6. READMEs ──" -ForegroundColor Yellow
+$readmeSemFrontmatter = Get-ChildItem -Recurse -Filter "README.md" | Where-Object {
+    $_.FullName -notmatch '\\\.git\\' -and
+    (Get-Content $_.FullName -First 1) -ne "---"
+}
+if ($readmeSemFrontmatter) {
+    foreach ($r in $readmeSemFrontmatter) {
+        Write-Host "⚠️  README sem frontmatter: $([System.IO.Path]::GetRelativePath($vault, $r.FullName))" -ForegroundColor Yellow
+        $avisos++
+    }
+} else { Write-Host "  ✅ Todos com frontmatter" -ForegroundColor Green }
+
+# ─── 7. Git health ───
 Write-Host "── 6. Git health ──" -ForegroundColor Yellow
 $gitStatus = git status --porcelain 2>$null
 if ($LASTEXITCODE -eq 0 -and $gitStatus) {
@@ -159,7 +172,7 @@ if ($LASTEXITCODE -eq 0 -and $gitStatus) {
 }
 
 # ─── 7. Tamanho do vault ───
-Write-Host "── 7. Métricas ──" -ForegroundColor Yellow
+Write-Host "── 8. Métricas ──" -ForegroundColor Yellow
 $totalMd = (Get-ChildItem -Recurse -Filter "*.md" -File | Where-Object { $_.FullName -notmatch '\\\.git\\' }).Count
 $totalPastas = (Get-ChildItem -Recurse -Directory | Where-Object { $_.FullName -notmatch '\\\.git\\' }).Count
 $tamanho = "{0:N2} MB" -f ((Get-ChildItem -Recurse -File | Where-Object { $_.FullName -notmatch '\\\.git\\' } | Measure-Object -Property Length -Sum).Sum / 1MB)

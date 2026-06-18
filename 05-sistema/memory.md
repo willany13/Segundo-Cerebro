@@ -31,7 +31,7 @@ Perfil, preferências e decisões datadas. Atualizado em 2026-06-18.
 - 2026-06-18: criados `02-projetos/controle-de-ativos.md`, `02-projetos/skill-nota-corretagem.md` e `02-projetos/sistema-criacao-conteudo-ia.md` para sanar wikilinks quebrados.
 - 2026-06-18: staging ganhou regra de expurgo (7 dias → archive, 30 dias → exclusão).
 - 2026-06-18: links bidirecionais completados entre projetos e conhecimento: `sistema-criacao-conteudo-ia` ↔ `programacao-e-ia`, `controle-de-ativos` ↔ `mercado-financeiro`, `skill-hermes` adicionado em `skills/README.md`.
-- 2026-06-18: `captura-rapida.md` e `fechar-dia.md` atualizados — consistentes com staging, expurgo e validar-staging.
+- 2026-06-18: `instrucao-captura.md` e `fechar-dia.md` atualizados — consistentes com staging, expurgo e validar-staging.
 - 2026-06-18: `perfil.md` enriquecido com stack, área e interesses.
 - 2026-06-18: criada nota `nota-corretagem-pipeline.md` em `mercado-financeiro/`.
 - 2026-06-18: captura registrada: `notebooklm-vai-mudar-notebooklm-claude.md` em `programacao-e-ia/`.

@@ -33,7 +33,7 @@ tags:
 - [[03-conhecimento/skills/README.md]]
 - [[03-conhecimento/mercado-financeiro/README.md]]
 - [[03-conhecimento/mercado-financeiro/nota-corretagem-pipeline.md]]
-- [[05-sistema/comandos/captura-rapida.md]]
+- [[05-sistema/comandos/instrucao-captura.md]]
 - [[05-sistema/comandos/fechar-dia.md]]
 - [[05-sistema/comandos/input-rec-ouperacao.md]]
 - [[05-sistema/comandos/revisao-semanal.md]]

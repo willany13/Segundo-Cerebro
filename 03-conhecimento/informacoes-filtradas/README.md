@@ -25,6 +25,11 @@ Dados externos já processados, internalizados e prontos para referência.
 
 - [[ferramentas/extended-graph-customizacao-graph-view-obsidian.md]] — customização do graph view do Obsidian com Extended Graph
 
+## Projetos relacionados
+
+- [[02-projetos/skill-hermes.md]] — consumo de informação filtrada pelas skills
+- [[02-projetos/sistema-criacao-conteudo-ia.md]] — pipeline de criação de conteúdo
+
 ## Rotas previstas
 
 - Temas financeiros / corretoras → anotações relevantes para `03-conhecimento/mercado-financeiro`
