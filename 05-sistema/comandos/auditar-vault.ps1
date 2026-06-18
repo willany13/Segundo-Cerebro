@@ -144,7 +144,7 @@ if ($readmeSemFrontmatter) {
 } else { Write-Host "  ✅ Todos com frontmatter" -ForegroundColor Green }
 
 # ─── 7. Git health ───
-Write-Host "── 6. Git health ──" -ForegroundColor Yellow
+Write-Host "── 7. Git health ──" -ForegroundColor Yellow
 $gitStatus = git status --porcelain 2>$null
 if ($LASTEXITCODE -eq 0 -and $gitStatus) {
     $untracked = $gitStatus | Where-Object { $_ -match '^\?\?.*\.md$' }
