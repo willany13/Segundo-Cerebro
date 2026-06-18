@@ -1,0 +1,15 @@
+# OS
+Thumbs.db
+.DS_Store
+
+# Obsidian
+.obsidian/workspace.json
+.obsidian/cache/
+.obsidian/plugins/
+.obsidian/themes/
+.obsidian/snippets/
+
+# Vault temp
+05-sistema/staging/archive/
+*.tmp
+*.bak

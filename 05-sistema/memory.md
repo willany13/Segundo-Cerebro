@@ -1,0 +1,66 @@
+---
+tags:
+  - grupo/sistema
+---
+# Memória
+
+Perfil, preferências e decisões datadas. Atualizado em 2026-06-18.
+
+## Quem é
+- Kennedy
+- Trabalha com projetos de IA e atividades relacionadas.
+- Frentes principais: Skill-Hermes, PROJETOS DE IA, Controle de Ativos, Sistema de Criação de Conteúdo com IA, Skill Nota-Corretagem.
+
+## Preferências
+- Sem rodeios, direto ao ponto.
+- Às vezes humorado.
+- Quer links cruzados automáticos entre projetos e conhecimento.
+- Fluxo de captura dinâmico para PDF, imagem, link, site e notas.
+
+## Decisões e correções
+- 2026-06-18: estrutura inicial do Segundo Cérebro.
+- 2026-06-18: notebooklm-skill aprimorada com 6 melhorias: setup.ps1 Windows, wrapper PowerShell, templates, integração vault, healthcheck, refresh automático de sessão.
+- 2026-06-18: yt-to-notebook reformulado como skill YouTube-específica (antes era cópia do notebook-to-md). Criados scripts get-yt-metadata.ps1, create-from-yt.ps1, yt-wrapper.ps1, setup.ps1, healthcheck.ps1, integrate-vault.ps1. Referências deduplicadas.
+- 2026-06-18: notebook-to-md reconstruído como skill base completa (antes era stub). SKILL.md com pipeline extrair → formatar/entregar, compartilha references/ e scripts/ com yt-to-notebook.
+- 2026-06-18: README.md do Skill-Hermes atualizado com tabela de skills e status.
+- 2026-06-18: tabela de roteamento extraída para `05-sistema/roteamento.md` (fonte única). CLAUDE.md e memory.md referenciam ela.
+- 2026-06-18: fluxo de captura fluido implantado (`05-sistema/comandos/input-rec-ouperacao.md`).
+- 2026-06-18: padronização de arquivos de visão geral para `README.md` por tema.
+- 2026-06-18: remoção automática de `Sem título`, `Untitled`, `.base` e `.canvas` fora dos pilares ativada por ação.
+- 2026-06-18: revisão de links ao criar nota ativada.
+- 2026-06-18: criados `02-projetos/controle-de-ativos.md`, `02-projetos/skill-nota-corretagem.md` e `02-projetos/sistema-criacao-conteudo-ia.md` para sanar wikilinks quebrados.
+- 2026-06-18: staging ganhou regra de expurgo (7 dias → archive, 30 dias → exclusão).
+- 2026-06-18: links bidirecionais completados entre projetos e conhecimento: `sistema-criacao-conteudo-ia` ↔ `programacao-e-ia`, `controle-de-ativos` ↔ `mercado-financeiro`, `skill-hermes` adicionado em `skills/README.md`.
+- 2026-06-18: `captura-rapida.md` e `fechar-dia.md` atualizados — consistentes com staging, expurgo e validar-staging.
+- 2026-06-18: `perfil.md` enriquecido com stack, área e interesses.
+- 2026-06-18: criada nota `nota-corretagem-pipeline.md` em `mercado-financeiro/`.
+- 2026-06-18: captura registrada: `notebooklm-vai-mudar-notebooklm-claude.md` em `programacao-e-ia/`.
+- 2026-06-18: limpeza de 4 pastas vazias fantasmas: `01-eu/objetivos/`, `03-conhecimento/ia/`, `03-conhecimento/outros/`, `03-conhecimento/programacao/`.
+- 2026-06-18: `informacoes-filtradas/` ganhou primeira nota real: `extended-graph-customizacao-graph-view-obsidian.md` movida para `ferramentas/`.
+- 2026-06-18: `informacoes-filtradas/README.md` limpo (remoção de duplicação e template com emoji).
+
+- 2026-06-18: `objetivos.md` atualizado — curto prazo riscado (estrutura feita), longo prazo preenchido.
+- 2026-06-18: `skill-hermes.md` expandido com capacidades, subprojetos e skills relacionadas.
+- 2026-06-18: `projetos-de-ia.md` expandido como guarda-chuva listando todos os projetos vinculados. com stack (Python), área (IA/ML + Dev geral), interesses (mercado financeiro, Obsidian, ferramentas IA).
+- 2026-06-18: `infinite-memory-system.md` e `captura-de-conhecimento.md` vinculados a `skill-hermes.md` e `projetos-de-ia.md`.
+- 2026-06-18: `revisao-semanal.md` criado — checklist de manutenção periódica.
+- 2026-06-18: removida duplicação de regras do vault do `agent.md` (eram redundantes com CLAUDE.md).
+- 2026-06-18: fluxo `validar-staging` criado em `05-sistema/comandos/validar-staging.md` com checklist de duplicidade, formato, conteúdo similar e roteamento.
+- 2026-06-18: skill `yt-to-notebook` instalada e usada para converter notebook do NotebookLM sobre Segundo Cérebro com Obsidian e Claude. Nota salva em `03-conhecimento/programacao-e-ia/segundo-cerebro-completo.md`.
+- 2026-06-18: regra anti-duplicacao no index: ao atualizar `index.md`, nao duplicar linhas de skills/notas; consultar lista atual antes de inserir.
+- 2026-06-18: regra permanente para skills/comandos/estruturas mais estáveis: arquivos elencados em `index.md` e READMEs devem seguir uma ordem canônica; quando for atualizar listas/tabelas, primeiro ler o arquivo atual inteiro e editar com base na realidade do disco, para evitar remendo. Ação anti-repetição passa a ser padrão para todo update.
+- 2026-06-18: wikilinks devem ser bidirecionais; referências quebradas são bloqueadas antes do salvamento e não entram no índice.
+- 2026-06-18: antes de criar nota nova, buscar registros existentes no vault sobre o mesmo tema; se já houver conteúdo similar, consolidar no ponto único em vez de duplicar.
+- 2026-06-18: frase de abertura alterada para "Segundo Cérebro ativo." no agent.md.
+- 2026-06-18: audit-skills.ps1 criado — auditoria automática que varre skills e aponta faltas (SKILL.md, setup.ps1, frontmatter, wrappers, healthcheck, vault).
+- 2026-06-18: corrigidos 2 críticos do audit: SKILL.md na raiz do Skill Nota-Corretagem e setup.ps1. Criados README.md, healthcheck.ps1 e integrate-vault.ps1 para skills que faltavam.
+- 2026-06-18: melhorias no vault: auditar-vault.ps1 (auditoria automática), healthcheck-vault.ps1 (frontmatter, links, consistência), processar-staging.ps1 (pipeline automatizado de staging), templates/ (captura-rapida, nota-conhecimento, projeto), READMEs em 03-conhecimento/notebooklm/ e 03-conhecimento/youtube/. Pastas vazias limpas, index.md corrigido (removida duplicata, adicionados novos paths).
+- 2026-06-18: três etapas da imagem implementadas sem criar arquivos antecipadamente:
+  - informações filtradas em `03-conhecimento/informacoes-filtradas/README.md`
+  - skills conectadas em `03-conhecimento/skills/README.md`
+  - inputs recorrentes da operação em `05-sistema/comandos/input-rec-ouperacao.md`
+
+## Aprendizados
+- Repositórios externos não devem entrar no vault; apenas notas que os descrevem e linkam.
+- Links devem ser bidirecionais quando há aplicação direta entre projetos e conhecimento.
+- Arquivos `.base`/`.canvas` no Obsidian são lixo e saem por ação.

@@ -1,0 +1,7 @@
+{
+  "nativeMenus": true,
+  "enabledCssSnippets": [
+    "graph-colors",
+    "graph-shapes"
+  ]
+}
