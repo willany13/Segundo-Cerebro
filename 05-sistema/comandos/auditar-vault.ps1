@@ -28,9 +28,7 @@ if (-not (Test-Path $indexPath)) { Write-Host "❌ index.md não encontrado!" -F
 else {
     $indexContent = Get-Content $indexPath -Raw
     $indexedFiles = @()
-    # Match backtick-enclosed paths: `path/to/file.md`
     [regex]::Matches($indexContent, '`([^`]+\.md)`') | ForEach-Object { $indexedFiles += $_.Groups[1].Value }
-    # Match wikilinks: [[path/to/file|name]] or [[path/to/file]]
     [regex]::Matches($indexContent, '\[\[([^\]]+?)(?:\|[^\]]+)?\]\]') | ForEach-Object { $indexedFiles += $_.Groups[1].Value }
     $indexedFiles = $indexedFiles | ForEach-Object { $_ -replace '\\', '/' } | Sort-Object -Unique
 
@@ -53,6 +51,17 @@ else {
             $avisos++
         }
     }
+
+    # Dead links: listed in index but file doesn't exist
+    foreach ($if in $indexedFiles) {
+        $normalized = $if.Trim() -replace '\\', '/'
+        $fullPath = Join-Path $vault $normalized
+        if (-not (Test-Path $fullPath)) {
+            Write-Host "❌ Link morto no index: $normalized" -ForegroundColor Red
+            $erros++
+        }
+    }
+
     Write-Host "  ✅ Index lido ($($indexedFiles.Count) entradas)" -ForegroundColor Green
 }
 
@@ -112,8 +121,36 @@ Get-ChildItem -Recurse -Filter "*.md" -File | Where-Object {
     }
 }
 
-# ─── 6. Tamanho do vault ───
-Write-Host "── 6. Métricas ──" -ForegroundColor Yellow
+# ─── 6. Git health ───
+Write-Host "── 6. Git health ──" -ForegroundColor Yellow
+$gitStatus = git status --porcelain 2>$null
+if ($LASTEXITCODE -eq 0 -and $gitStatus) {
+    $untracked = $gitStatus | Where-Object { $_ -match '^\?\?.*\.md$' }
+    $modified = $gitStatus | Where-Object { $_ -match '^ M.*\.md$' }
+    if ($untracked) {
+        foreach ($u in $untracked) {
+            Write-Host "⚠️  .md não versionado: $($u.Substring(3))" -ForegroundColor Yellow
+            $avisos++
+        }
+    }
+    if ($modified) {
+        foreach ($m in $modified) {
+            Write-Host "⚠️  .md modificado sem stage: $($m.Substring(3))" -ForegroundColor Yellow
+            $avisos++
+        }
+    }
+    if (-not $untracked -and -not $modified) {
+        Write-Host "  ✅ Git limpo" -ForegroundColor Green
+    }
+} elseif ($LASTEXITCODE -ne 0) {
+    Write-Host "  ⚠️  Não é um repositório git" -ForegroundColor Yellow
+    $avisos++
+} else {
+    Write-Host "  ✅ Git limpo" -ForegroundColor Green
+}
+
+# ─── 7. Tamanho do vault ───
+Write-Host "── 7. Métricas ──" -ForegroundColor Yellow
 $totalMd = (Get-ChildItem -Recurse -Filter "*.md" -File | Where-Object { $_.FullName -notmatch '\\\.git\\' }).Count
 $totalPastas = (Get-ChildItem -Recurse -Directory | Where-Object { $_.FullName -notmatch '\\\.git\\' }).Count
 $tamanho = "{0:N2} MB" -f ((Get-ChildItem -Recurse -File | Where-Object { $_.FullName -notmatch '\\\.git\\' } | Measure-Object -Property Length -Sum).Sum / 1MB)
@@ -128,3 +165,4 @@ else {
     Write-Host "⚠️  Avisos: $avisos" -ForegroundColor Yellow
 }
 if ($Fix) { Write-Host "(modo -Fix ativado: correções automáticas serão aplicadas)" -ForegroundColor Yellow }
+exit $erros
