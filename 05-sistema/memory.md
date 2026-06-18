@@ -46,6 +46,7 @@ Perfil, preferências e decisões datadas. Atualizado em 2026-06-18.
 - 2026-06-18: `revisao-semanal.md` criado — checklist de manutenção periódica.
 - 2026-06-18: removida duplicação de regras do vault do `agent.md` (eram redundantes com CLAUDE.md).
 - 2026-06-18: fluxo `validar-staging` criado em `05-sistema/comandos/validar-staging.md` com checklist de duplicidade, formato, conteúdo similar e roteamento.
+- 2026-06-18: nota `2026-06-18-automacao-para-afiliados-com-python-e-github-actions.md` gerada via NotebookLM a partir do vídeo `px7O23SvIn8` e salva em `03-conhecimento/youtube/`.
 - 2026-06-18: skill `yt-to-notebook` instalada e usada para converter notebook do NotebookLM sobre Segundo Cérebro com Obsidian e Claude. Nota salva em `03-conhecimento/programacao-e-ia/segundo-cerebro-completo.md`.
 - 2026-06-18: regra anti-duplicacao no index: ao atualizar `index.md`, nao duplicar linhas de skills/notas; consultar lista atual antes de inserir.
 - 2026-06-18: regra permanente para skills/comandos/estruturas mais estáveis: arquivos elencados em `index.md` e READMEs devem seguir uma ordem canônica; quando for atualizar listas/tabelas, primeiro ler o arquivo atual inteiro e editar com base na realidade do disco, para evitar remendo. Ação anti-repetição passa a ser padrão para todo update.

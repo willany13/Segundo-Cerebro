@@ -1,6 +1,11 @@
-# Índice do Segundo Cérebro
+---
+title: Índice do Segundo Cérebro
+atualizado: 2026-06-18
+tags:
+  - grupo/nucleo
+---
 
-Atualizado: 2026-06-18
+# Índice do Segundo Cérebro
 
 - `CLAUDE.md`
 - `05-sistema/agent.md`
@@ -18,11 +23,12 @@ Atualizado: 2026-06-18
 - `03-conhecimento/programacao-e-ia/segundo-cerebro-obsidian-claude.md`
 - `03-conhecimento/programacao-e-ia/segundo-cerebro-completo.md`
 - `03-conhecimento/programacao-e-ia/notebooklm-vai-mudar-notebooklm-claude.md`
-- `03-conhecimento/programacao-e-ia/qual-utilidade-grafico-obsidian.md`
+
 - `03-conhecimento/programacao-e-ia/captura-de-conhecimento.md`
 - `03-conhecimento/notebooklm/README.md`
 - `03-conhecimento/youtube/README.md`
 - `03-conhecimento/youtube/2026-06-18-o-jeito-certo-de-usar-ia-para-programar.md`
+- `03-conhecimento/youtube/2026-06-18-automacao-para-afiliados-com-python-e-github-actions.md`
 - `03-conhecimento/informacoes-filtradas/README.md`
 - `03-conhecimento/informacoes-filtradas/ferramentas/extended-graph-customizacao-graph-view-obsidian.md`
 - `03-conhecimento/skills/README.md`

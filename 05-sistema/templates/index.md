@@ -1,3 +1,9 @@
+---
+title: Templates de nota
+tags:
+  - grupo/sistema
+---
+
 # Templates de nota
 
 | Template | Uso |
