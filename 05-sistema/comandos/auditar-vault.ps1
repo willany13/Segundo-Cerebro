@@ -62,6 +62,15 @@ else {
         }
     }
 
+    # Deprecated: backtick-enclosed paths instead of wikilinks
+    $backtickLinks = [regex]::Matches($indexContent, '`([^`]+\.md)`')
+    if ($backtickLinks.Count -gt 0) {
+        foreach ($m in $backtickLinks) {
+            Write-Host "⚠️  Link em backtick (use [[...]]): $($m.Groups[1].Value)" -ForegroundColor Yellow
+            $avisos++
+        }
+    }
+
     Write-Host "  ✅ Index lido ($($indexedFiles.Count) entradas)" -ForegroundColor Green
 }
 
