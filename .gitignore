@@ -14,3 +14,5 @@ Thumbs.db
 05-sistema/staging/archive/
 *.tmp
 *.bak
+
+.env

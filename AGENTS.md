@@ -109,7 +109,21 @@ Ao iniciar sessão, se o Vigia estiver rodando, verificar `05-sistema/staging/` 
 - Envia mensagem, URL, foto ou documento do celular → cai direto em staging
 - Comandos: `/capturar`, `/processar`, `/status`
 
-### 9.8 Busca rápida
+### 9.8 Auto-tagging
+- `05-sistema/comandos/auto-tag.py` — sugere tags para uma nota baseado no conteudo
+- Uso: `python auto-tag.py nota.md` ou `python auto-tag.py --dir staging/`
+
+### 9.9 CI (GitHub Actions)
+- `.github/workflows/validate.yml` — roda `validar-links.ps1` em todo push
+- Se houver broken link, o PR/push e bloqueado automaticamente
+
+### 9.10 Atalhos Windows
+- `captura-rapida.bat` — duplo clique, pergunta texto, salva em staging
+- `processar-staging.bat` — duplo clique, processa staging
+- `backup.bat` — duplo clique, commit + push
+- `revisao-semanal.bat` — duplo clique, mostra relatorio
+
+### 9.11 Busca rápida
 - `05-sistema/comandos/busca-vault.ps1` — busca termo no vault com trechos
 - `pwsh busca-vault.ps1 -Termo "skill hermes" -Pilar "03-conhecimento" -Contexto 3`
 

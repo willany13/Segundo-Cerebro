@@ -1,0 +1,42 @@
+name: Validar Vault
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  validate:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Instalar PowerShell
+        shell: pwsh
+        run: |
+          Write-Host "PowerShell version: $($PSVersionTable.PSVersion)"
+
+      - name: Validar wikilinks
+        shell: pwsh
+        run: |
+          $result = & ".\05-sistema\comandos\validar-links.ps1" 2>&1
+          Write-Host $result
+          if ($LASTEXITCODE -ne 0) {
+            Write-Host "::error::Links quebrados encontrados!"
+            exit 1
+          }
+          Write-Host "::notice::Todos os links OK"
+
+      - name: Verificar arquivos obsoletos na raiz
+        shell: pwsh
+        run: |
+          $ruido = Get-ChildItem -Path "." -File | Where-Object { $_.Name -match '^(Sem título|Untitled)\.' }
+          if ($ruido) {
+            Write-Host "::warning::Arquivos obsoletos na raiz: $($ruido.Count)"
+            $ruido | ForEach-Object { Write-Host "  - $($_.Name)" }
+          } else {
+            Write-Host "Nenhum arquivo obsoleto na raiz."
+          }

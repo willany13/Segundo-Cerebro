@@ -35,8 +35,23 @@ VAULT_ROOT = Path(__file__).resolve().parents[2]
 STAGING_DIR = VAULT_ROOT / "05-sistema" / "staging"
 STAGING_DIR.mkdir(parents=True, exist_ok=True)
 
+# Carrega .env se existir
+_env_path = Path(__file__).parent / ".env"
+if _env_path.exists():
+    with open(_env_path) as _f:
+        for _line in _f:
+            _line = _line.strip()
+            if _line and not _line.startswith("#") and "=" in _line:
+                _k, _v = _line.split("=", 1)
+                os.environ.setdefault(_k.strip(), _v.strip())
+
 TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
 CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "")
+
+def autorizado(update: Update) -> bool:
+    if not CHAT_ID:
+        return True
+    return str(update.effective_user.id) == str(CHAT_ID)
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -82,6 +97,9 @@ fonte: {fonte}
 
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    if not autorizado(update):
+        await update.message.reply_text("Nao autorizado.")
+        return
     await update.message.reply_text(
         "Segundo Cerebro ativo.\n\n"
         "Envie qualquer mensagem para capturar.\n"
@@ -92,6 +110,9 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 
 async def capturar(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    if not autorizado(update):
+        await update.message.reply_text("Nao autorizado.")
+        return
     texto = " ".join(context.args)
     if not texto:
         await update.message.reply_text("Uso: /capturar <texto ou URL>")
@@ -104,6 +125,9 @@ async def capturar(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 
 async def processar(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    if not autorizado(update):
+        await update.message.reply_text("Nao autorizado.")
+        return
     await update.message.reply_text("Processando staging...")
     try:
         proc = await asyncio.create_subprocess_exec(
@@ -121,6 +145,9 @@ async def processar(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 
 async def status(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    if not autorizado(update):
+        await update.message.reply_text("Nao autorizado.")
+        return
     staging = list(STAGING_DIR.glob("*.md"))
     staging_count = len([s for s in staging if s.parent.name != "archive"])
     vault_md = list(VAULT_ROOT.rglob("*.md"))
@@ -132,6 +159,8 @@ async def status(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    if not autorizado(update):
+        return
     texto = update.message.text or update.message.caption or ""
     if not texto.strip():
         await update.message.reply_text("Envie um texto, URL ou documento.")
@@ -144,6 +173,8 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 
 async def handle_document(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    if not autorizado(update):
+        return
     doc = update.message.document or update.message.photo[-1] if update.message.photo else None
     if not doc:
         return
