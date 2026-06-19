@@ -16,14 +16,18 @@ Sempre leia, na ordem:
 - `05-sistema/roteamento.md` (tabela de roteamento)
 - `index.md` (o que existe no vault)
 
-Depois desse carregamento, responda normalmente.
+Depois desse carregamento, execute automaticamente:
+- `pwsh 05-sistema/comandos/iniciar-sessao.ps1` (expurga staging, mostra capturas pendentes)
+- Se houver capturas pendentes, processe-as com `processar-staging.ps1 -AutoApprove`
+- Depois responda normalmente.
 
-## 2. Fim de sessão
-Ao encerrar:
-- atualize `05-sistema/memory.md` com decisões relevantes;
-- atualize `index.md` para refletir qualquer nota nova/renomeada/excluída;
-- se houver fatos do dia, registre também em `04-capturas/<YYYY-MM-DD>.md`.
-- **rode `05-sistema/comandos/validar-links.ps1`** e corrija qualquer broken link antes de encerrar.
+## 2. Fim de sessão (automático — não perguntar)
+Ao encerrar, execute TUDO abaixo sem perguntar:
+1. atualize `05-sistema/memory.md` com decisões relevantes;
+2. atualize `index.md` para refletir qualquer nota nova/renomeada/excluída;
+3. se houver fatos do dia, registre também em `04-capturas/<YYYY-MM-DD>.md`;
+4. **rode `pwsh 05-sistema/comandos/encerrar-sessao.ps1`** (expurgo → backup → validar links);
+5. se o backup ou validação falhar, avise — mas só pergunte se for algo crítico (ex.: broken link que não sabe como corrigir).
 
 ## 3. Roteamento
 
@@ -103,13 +107,20 @@ Ao iniciar sessão, se o Vigia estiver rodando, verificar `05-sistema/staging/` 
 - `05-sistema/comandos/busca-vault.ps1` — busca termo no vault com trechos
 - `pwsh busca-vault.ps1 -Termo "skill hermes" -Pilar "03-conhecimento" -Contexto 3`
 
-## 10. Fim de sessão estendido
-Ao encerrar, executar nesta ordem:
-1. `pwsh expurgar-staging.ps1 -Executar`
-2. `pwsh auto-backup.ps1` (commit + push automático)
-3. `pwsh validar-links.ps1`
+## 10. Automação agendada (Windows Task Scheduler)
+Para rodar expurgo e backup mesmo sem agente, configure com:
+- `pwsh 05-sistema/comandos/setup-agendamento.ps1` (executar como Administrador UMA VEZ)
+- Cria tarefas: Cerebro-Expurgo (09:00) e Cerebro-Backup (18:00)
 
-## 11. Regra anti-dump para skills
+## 11. Regra de decisão: automático vs manual
+**Tudo é automático por padrão.** Eu só pergunto se:
+1. A tarefa pede alteração em `AGENTS.md` ou `05-sistema/agent.md` (regra de proteção)
+2. Uma decisão do vault conflita com o que está sendo pedido
+3. Um comando crítico falhou e não sei como resolver sozinho
+
+Fora isso, eu simplesmente **faço** — expurgo, backup, validação, captura, roteamento, consolidação. Sem perguntar.
+
+## 12. Regra anti-dump para skills
 Skills que geram documentos (ex.: `notebook-to-md`, `yt-to-notebook`) devem produzir **um documento de saída por assunto**, não fazer dump de arquivos.
 Cada documento deve conter:
 - **modelo/abstract mínimo** (3-5 linhas);

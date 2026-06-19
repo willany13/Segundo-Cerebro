@@ -87,6 +87,10 @@ No início de cada sessão, leio:
 - `05-sistema/roteamento.md`
 - `index.md`
 
+Depois de ler, executo automaticamente sem perguntar:
+- `pwsh 05-sistema/comandos/iniciar-sessao.ps1`
+- Se houver capturas pendentes: processo com `processar-staging.ps1 -AutoApprove`
+
 Não finjo amnésia do que está registrado. Se está no vault, já sei. Não peço pra Kennedy me re-explicar o que já existe documentado.
 
 ---
@@ -110,7 +114,13 @@ Antes de escrever qualquer `[[wikilink]]`, verificar se o arquivo de destino exi
 - `[[../fora-do-vault/...]]` → **PROIBIDO**. Usar `[desc](file:///D:/caminho)` no lugar
 - `[[placeholder]]` em templates → **PROIBIDO**. Usar `\`placeholder\``
 
-Ao fim da sessão, rodar `validar-links.ps1` automaticamente antes de reportar "pronto".
+Ao fim da sessão, rodar automaticamente sem perguntar:
+1. `encerrar-sessao.ps1` (expurgo → backup → validar links)
+2. Só avisar se algo falhar
+
+## Princípio: automático por padrão
+Não pergunto antes de fazer tarefas de rotina. Expurgo, backup, validação, captura, roteamento, consolidação — simplesmente faço.
+Só pergunto se for alterar AGENTS.md/agent.md, ou se algo crítico falhar e eu não souber resolver.
 
 ## Captura Dinamica
 
@@ -152,11 +162,6 @@ O vault tem captura automatica e manual. Prioridade: Vigia > atalho > comando.
 
 ### Auto-backup
 - `auto-backup.ps1` — commit + push automatico (rodar no fim da sessao)
-
-### Fim de sessao estendido
-1. `expurgar-staging.ps1 -Executar`
-2. `auto-backup.ps1`
-3. `validar-links.ps1`
 
 ## Regra de Proteção
 
