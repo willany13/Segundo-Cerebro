@@ -14,11 +14,16 @@ Visão consolidada de todo o conhecimento do vault, organizado por tema e com li
 
 | Nota | Síntese |
 |------|---------|
-| [[programacao-e-ia/mao-na-massa.md]] | **Padrões práticos** — PowerShell, git hooks, pipeline, regex. Use para criar scripts novos |
-| [[programacao-e-ia/captura-de-conhecimento.md]] | **Staging dinâmico** — fluxo buffer → validar → commit. Base do pipeline do vault |
-| [[programacao-e-ia/segundo-cerebro-completo.md]] | **Arquitetura** do segundo cérebro — como conectar Obsidian + Claude + skills |
-| [[programacao-e-ia/infinite-memory-system.md]] | **Memória infinita** — NotebookLM + Claude + Obsidian como sistema único |
-| [[programacao-e-ia/notebooklm-vai-mudar-notebooklm-claude.md]] | **Integração prática** — NotebookLM como base de conhecimento, Claude como executor |
+| [[programacao-e-ia/powershell-pratico.md]] | **PowerShell** — try/catch, logging, debug, modular, exit code |
+| [[programacao-e-ia/python-pratico.md]] | **Python** — automação de arquivos, requests, PDF, argparse |
+| [[programacao-e-ia/git-pratico.md]] | **Git** — fluxos, hooks, aliases, CI/CD com GitHub Actions |
+| [[programacao-e-ia/apis-pratico.md]] | **APIs** — REST, autenticação, rate limiting, GitHub API |
+| [[programacao-e-ia/cli-pratico.md]] | **CLI** — argparse, entry points, cores, template híbrido |
+| [[programacao-e-ia/mao-na-massa.md]] | **Padrões do vault** — PowerShell, git hooks, pipeline, regex |
+| [[programacao-e-ia/captura-de-conhecimento.md]] | **Staging dinâmico** — buffer → validar → commit |
+| [[programacao-e-ia/segundo-cerebro-completo.md]] | **Arquitetura** — Obsidian + Claude + skills |
+| [[programacao-e-ia/infinite-memory-system.md]] | **Memória infinita** — NotebookLM + Claude + Obsidian |
+| [[programacao-e-ia/notebooklm-vai-mudar-notebooklm-claude.md]] | **Integração** — NotebookLM como base de conhecimento |
 
 **Aplicação direta:** [[02-projetos/skill-hermes.md]], [[02-projetos/projetos-de-ia.md]]
 
