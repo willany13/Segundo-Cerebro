@@ -31,7 +31,7 @@ Perfil, preferências e decisões datadas. Atualizado em 2026-06-18.
 - 2026-06-18: criados `02-projetos/controle-de-ativos.md`, `02-projetos/skill-nota-corretagem.md` e `02-projetos/sistema-criacao-conteudo-ia.md` para sanar wikilinks quebrados.
 - 2026-06-18: staging ganhou regra de expurgo (7 dias → archive, 30 dias → exclusão).
 - 2026-06-18: links bidirecionais completados entre projetos e conhecimento: `sistema-criacao-conteudo-ia` ↔ `programacao-e-ia`, `controle-de-ativos` ↔ `mercado-financeiro`, `skill-hermes` adicionado em `skills/README.md`.
-- 2026-06-18: `instrucao-captura.md` e `fechar-dia.md` atualizados — consistentes com staging, expurgo e validar-staging.
+- 2026-06-18: `instrucao-captura.md` e `fechar-dia.md` substituídos por `captura-rapida.ps1` e `encerrar-sessao.ps1`.
 - 2026-06-18: `perfil.md` enriquecido com stack, área e interesses.
 - 2026-06-18: criada nota `nota-corretagem-pipeline.md` em `mercado-financeiro/`.
 - 2026-06-18: captura registrada: `notebooklm-vai-mudar-notebooklm-claude.md` em `programacao-e-ia/`.
@@ -43,9 +43,9 @@ Perfil, preferências e decisões datadas. Atualizado em 2026-06-18.
 - 2026-06-18: `skill-hermes.md` expandido com capacidades, subprojetos e skills relacionadas.
 - 2026-06-18: `projetos-de-ia.md` expandido como guarda-chuva listando todos os projetos vinculados. com stack (Python), área (IA/ML + Dev geral), interesses (mercado financeiro, Obsidian, ferramentas IA).
 - 2026-06-18: `infinite-memory-system.md` e `captura-de-conhecimento.md` vinculados a `skill-hermes.md` e `projetos-de-ia.md`.
-- 2026-06-18: `revisao-semanal.md` criado — checklist de manutenção periódica.
+- 2026-06-18: `revisao-semanal.md` substituído por `revisao-semanal.ps1`.
 - 2026-06-18: removida duplicação de regras do vault do `agent.md` (eram redundantes com AGENTS.md).
-- 2026-06-18: fluxo `validar-staging` criado em `05-sistema/comandos/validar-staging.md` com checklist de duplicidade, formato, conteúdo similar e roteamento.
+- 2026-06-18: fluxo `validar-staging.md` substituído por `processar-staging.ps1`.
 - 2026-06-18: nota `2026-06-18-automacao-para-afiliados-com-python-e-github-actions.md` gerada via NotebookLM a partir do vídeo `px7O23SvIn8` e salva em `03-conhecimento/youtube/`.
 - 2026-06-18: nota `2026-06-18-como-eu-uso-ia-pra-programar-em-2026.md` gerada via NotebookLM a partir do vídeo `7nN4ayK79oc` e salva em `03-conhecimento/youtube/`. NotebookLM: `d5024cd0-...` com fonte `c20de796-...`.
 - 2026-06-18: nota `2026-06-18-o-guia-definitivo-de-engenharia-de-prompt.md` gerada via NotebookLM a partir do vídeo `xJzLJMRxFIc` e salva em `03-conhecimento/youtube/`. NotebookLM: `9a1fc434-...` com fonte `7b18ca51-...`.
