@@ -1,0 +1,12 @@
+#!/bin/sh
+# pre-commit hook — valida wikilinks
+# Works with Git Bash (shipped with Git for Windows)
+
+SCRIPT="$(dirname "$0")/../05-sistema/comandos/validar-links.ps1"
+
+if pwsh -NoProfile -ExecutionPolicy RemoteSigned -File "$SCRIPT"; then
+    exit 0
+else
+    echo "Commit bloqueado: corrija os broken links acima e tente novamente." >&2
+    exit 1
+fi
