@@ -14,7 +14,7 @@ Notas geradas a partir de vídeos do YouTube, processadas via pipeline
 - [[02-projetos/sistema-criacao-conteudo-ia.md]] — pipeline YouTube → conteúdo
 
 ## Origem
-- Skill: [[../../Skill-Hermes/yt-to-notebook/SKILL.md|yt-to-notebook]]
+- Skill: [yt-to-notebook](file:///D:/IA/Skill-Hermes/yt-to-notebook/SKILL.md)
 - Pipeline: URL → NotebookLM → extração → formatação (via `notebook-to-md`)
 
 ## Estrutura

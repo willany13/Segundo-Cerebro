@@ -18,6 +18,8 @@ tags:
 - [[02-projetos/skill-hermes.md]]
 - [[02-projetos/skill-nota-corretagem.md]]
 - [[02-projetos/sistema-criacao-conteudo-ia.md]]
+- [[02-projetos/agent-browser.md]]
+- [[02-projetos/buscar-skills.md]]
 - [[03-conhecimento/programacao-e-ia/README.md]]
 - [[03-conhecimento/programacao-e-ia/infinite-memory-system.md]]
 - [[03-conhecimento/programacao-e-ia/segundo-cerebro-obsidian-claude.md]]
@@ -46,6 +48,8 @@ tags:
 - [[03-conhecimento/skills/README.md]]
 - [[03-conhecimento/skills/autonomous-ai-agents.md]]
 - [[03-conhecimento/skills/limites-e-fallback-provedores.md]]
+- [[03-conhecimento/skills/buscar-skills.md]]
+- [[03-conhecimento/skills/agent-browser.md]]
 - [[03-conhecimento/mercado-financeiro/README.md]]
 - [[03-conhecimento/mercado-financeiro/nota-corretagem-pipeline.md]]
 - [[05-sistema/comandos/instrucao-captura.md]]
@@ -55,3 +59,6 @@ tags:
 - [[05-sistema/comandos/validar-staging.md]]
 - [[05-sistema/staging/README.md]]
 - [[04-capturas/2026-06-18.md]]
+- [[04-capturas/2026-06-19.md]]
+
+

@@ -22,9 +22,9 @@ tags:
 ## Subprojetos
 - [[02-projetos/projetos-de-ia.md]] — guarda-chuva dos projetos de IA
 - [[02-projetos/sistema-criacao-conteudo-ia.md]] — pipeline de conteúdo
-- [[../Skill-Hermes/notebooklm-skill/README.md|notebooklm-skill]] — skill para Google NotebookLM via CLI
-- [[../Skill-Hermes/notebook-to-md/SKILL.md|notebook-to-md]] — NotebookLM → Markdown visual
-- [[../Skill-Hermes/yt-to-notebook/SKILL.md|yt-to-notebook]] — YouTube → NotebookLM → nota visual
+- [notebooklm-skill](file:///D:/IA/Skill-Hermes/notebooklm-skill/README.md) — skill para Google NotebookLM via CLI
+- [notebook-to-md](file:///D:/IA/Skill-Hermes/notebook-to-md/SKILL.md) — NotebookLM → Markdown visual
+- [yt-to-notebook](file:///D:/IA/Skill-Hermes/yt-to-notebook/SKILL.md) — YouTube → NotebookLM → nota visual
 
 ## Skills relacionadas
 - [[02-projetos/skill-nota-corretagem.md]]

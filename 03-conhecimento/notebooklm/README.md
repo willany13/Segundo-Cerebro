@@ -14,8 +14,8 @@ Notas geradas a partir de notebooks do Google NotebookLM, sincronizadas via
 - [[02-projetos/projetos-de-ia.md]] — experimentos com NotebookLM + Claude
 
 ## Origem
-- Skill: [[../../Skill-Hermes/notebooklm-skill/README.md|notebooklm-skill]]
-- Skill: [[../../Skill-Hermes/notebook-to-md/SKILL.md|notebook-to-md]]
+- Skill: [notebooklm-skill](file:///D:/IA/Skill-Hermes/notebooklm-skill/README.md)
+- Skill: [notebook-to-md](file:///D:/IA/Skill-Hermes/notebook-to-md/SKILL.md)
 - CLI: `notebooklm` (notebooklm-py)
 
 ## Estrutura

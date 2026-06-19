@@ -9,7 +9,7 @@ inicio: {{AAAA-MM-DD}}
 
 - **Contexto:** {{descrição}}
 - **Status:** {{status}}
-- **Conhecimento relacionado:** [[link para conhecimento]]
+- **Conhecimento relacionado:** `link para conhecimento`
 
 ## Objetivos
 - [ ] {{objetivo 1}}

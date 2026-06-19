@@ -21,5 +21,5 @@ fonte: {{origem}}
 {{Como se aplica nos projetos}}
 
 ## Conexões
-- [[link para projeto relacionado]]
-- [[link para outra nota de conhecimento]]
+- `link para projeto relacionado`
+- `link para outra nota de conhecimento`

@@ -21,6 +21,7 @@ Ao encerrar:
 - atualize `05-sistema/memory.md` com decisões relevantes;
 - atualize `index.md` para refletir qualquer nota nova/renomeada/excluída;
 - se houver fatos do dia, registre também em `04-capturas/<YYYY-MM-DD>.md`.
+- **rode `05-sistema/comandos/validar-links.ps1`** e corrija qualquer broken link antes de encerrar.
 
 ## 3. Roteamento
 
@@ -52,6 +53,10 @@ Regra: se há sobreposição natural entre pilares, deixe a conexão explícita.
 
 ## 8. Revisão de links ao criar nota
 Ao criar uma nota, verificar se notas existentes devem apontar para ela ou ser apontadas por ela. Os links são bidirecionais quando há aplicação direta entre áreas diferentes.
+
+**Antes de salvar qualquer `[[wikilink]]`, verificar se o destino existe no disco.** `[[link]]` só deve ser usado para arquivos dentro do vault. Para arquivos fora do vault (ex.: `D:\IA\Skill-Hermes\...`), usar markdown: `[desc](file:///D:/caminho/para/arquivo)`.
+
+**Nunca usar `[[placeholder]]` em templates.** Usar `\`placeholder\`` no lugar.
 
 ## 9. Regra anti-dump para skills
 Skills que geram documentos (ex.: `notebook-to-md`, `yt-to-notebook`) devem produzir **um documento de saída por assunto**, não fazer dump de arquivos.

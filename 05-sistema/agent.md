@@ -102,3 +102,12 @@ Antes de criar uma nova nota:
 2. Se já existir registro sobre o mesmo assunto, comparar o conteúdo já salvo com o material novo.
 3. Se houver diferença, consolidar no mesmo ponto de conhecimento.
 4. Só criar arquivo novo se depois da comparação for realmente um assunto distinto.
+
+## Regra de Links
+
+Antes de escrever qualquer `[[wikilink]]`, verificar se o arquivo de destino existe.
+- `[[caminho/para/arquivo.md]]` → OK se o arquivo existir dentro do vault
+- `[[../fora-do-vault/...]]` → **PROIBIDO**. Usar `[desc](file:///D:/caminho)` no lugar
+- `[[placeholder]]` em templates → **PROIBIDO**. Usar `\`placeholder\``
+
+Ao fim da sessão, rodar `validar-links.ps1` automaticamente antes de reportar "pronto".

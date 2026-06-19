@@ -55,12 +55,17 @@ Perfil, preferências e decisões datadas. Atualizado em 2026-06-18.
 - 2026-06-18: nota `how-to-debug-scripts-in-windows-powershell-ise.md` criada em `03-conhecimento/informacoes-filtradas/ferramentas/` a partir de documentação Microsoft Learn.
 - 2026-06-18: skill `yt-to-notebook` instalada e usada para converter notebook do NotebookLM sobre Segundo Cérebro com Obsidian e Claude. Nota salva em `03-conhecimento/programacao-e-ia/segundo-cerebro-completo.md`.
 - 2026-06-18: regra anti-duplicacao no index: ao atualizar `index.md`, nao duplicar linhas de skills/notas; consultar lista atual antes de inserir.
+- 2026-06-19: melhoria skill notebooklm-skill — adicionado export/backup de notebooks (`export-notebooks.ps1`, `Export-NBNotebook`, `Export-NBAll`). Exporta fulltext, sources, summary, history para `~/NotebookLM-Backups/`.
+- 2026-06-19: skill-creator do Anthropic analisada por segurança — todos os scripts verificados (quick_validate.py, package_skill.py, utils.py, aggregate_benchmark.py, run_eval.py, run_loop.py, improve_description.py, generate_report.py). Resultado: seguro, sem malware, sem chamadas de rede suspeitas. Instalada em `D:\IA\Skill-Hermes\skill-creator/`.
+- 2026-06-19: skill-creator instalada no Skill-Hermes com todos os scripts e README. Adicionada na tabela de skills do repositório.
+- 2026-06-19: criado conjunto de 200 testes para evals do skill-creator em `D:\IA\Skill-Hermes\skill-creator\evals\evals.json`. Testes cobrem: decisões, capturas, projetos, conhecimento, skills, preferências, referências, documentação, debugging, infraestrutura, segurança e SRE.
 - 2026-06-18: regra permanente para skills/comandos/estruturas mais estáveis: arquivos elencados em `index.md` e READMEs devem seguir uma ordem canônica; quando for atualizar listas/tabelas, primeiro ler o arquivo atual inteiro e editar com base na realidade do disco, para evitar remendo. Ação anti-repetição passa a ser padrão para todo update.
 - 2026-06-18: wikilinks devem ser bidirecionais; referências quebradas são bloqueadas antes do salvamento e não entram no índice.
 - 2026-06-18: antes de criar nota nova, buscar registros existentes no vault sobre o mesmo tema; se já houver conteúdo similar, consolidar no ponto único em vez de duplicar.
 - 2026-06-18: frase de abertura alterada para "Segundo Cérebro ativo." no agent.md.
 - 2026-06-18: audit-skills.ps1 criado — auditoria automática que varre skills e aponta faltas (SKILL.md, setup.ps1, frontmatter, wrappers, healthcheck, vault).
 - 2026-06-18: corrigidos 2 críticos do audit: SKILL.md na raiz do Skill Nota-Corretagem e setup.ps1. Criados README.md, healthcheck.ps1 e integrate-vault.ps1 para skills que faltavam.
+- 2026-06-19: notebooklm-skill ganhou funcionalidade de export/backup. Criados `export-notebooks.ps1` (script standalone), funções `Export-NBNotebook` e `Export-NBAll` no wrapper. Exporta fulltext, sources, summary e history para `~/NotebookLM-Backups/`.
 - 2026-06-18: melhorias no vault: auditar-vault.ps1 (auditoria automática), healthcheck-vault.ps1 (frontmatter, links, consistência), processar-staging.ps1 (pipeline automatizado de staging), templates/ (captura-rapida, nota-conhecimento, projeto), READMEs em 03-conhecimento/notebooklm/ e 03-conhecimento/youtube/. Pastas vazias limpas, index.md corrigido (removida duplicata, adicionados novos paths).
 - 2026-06-18: três etapas da imagem implementadas sem criar arquivos antecipadamente:
   - informações filtradas em `03-conhecimento/informacoes-filtradas/README.md`
