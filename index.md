@@ -27,6 +27,8 @@ tags:
 - [[03-conhecimento/programacao-e-ia/notebooklm-vai-mudar-notebooklm-claude.md]]
 - [[03-conhecimento/programacao-e-ia/captura-de-conhecimento.md]]
 - [[03-conhecimento/programacao-e-ia/mao-na-massa.md]]
+- [[03-conhecimento/programacao-e-ia/opencode.md]]
+- [[03-conhecimento/programacao-e-ia/mimo-code.md]]
 - [[03-conhecimento/programacao-e-ia/powershell-pratico.md]]
 - [[03-conhecimento/programacao-e-ia/python-pratico.md]]
 - [[03-conhecimento/programacao-e-ia/git-pratico.md]]

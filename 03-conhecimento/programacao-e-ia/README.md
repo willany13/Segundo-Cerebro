@@ -30,3 +30,5 @@ Referências sobre projetos de IA e desenvolvimento.
 - [[captura-de-conhecimento.md]] — fluxo dinâmico de staging e validação
 - [[notebooklm-vai-mudar-notebooklm-claude.md]] — NotebookLM vai mudar pra sempre a maneira que você usa o Claude
 - [[mao-na-massa.md]] — padrões extraídos dos scripts do vault
+- [[opencode.md]] — instalacao e uso do OpenCode no Windows
+- [[mimo-code.md]] — MiMo Code e porque nao e integravel ao Hermes
