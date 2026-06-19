@@ -21,3 +21,4 @@ Referências sobre projetos de IA e desenvolvimento.
 - [[infinite-memory-system.md]] — integração NotebookLM + Claude + Obsidian
 - [[captura-de-conhecimento.md]] — fluxo dinâmico de staging e validação
 - [[notebooklm-vai-mudar-notebooklm-claude.md]] — NotebookLM vai mudar pra sempre a maneira que você usa o Claude
+- [[mao-na-massa.md]] — padrões práticos de PowerShell, git hooks, pipeline de staging e regex extraídos dos scripts do vault

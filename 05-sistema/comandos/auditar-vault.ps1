@@ -171,7 +171,7 @@ if ($LASTEXITCODE -eq 0 -and $gitStatus) {
     Write-Host "  ✅ Git limpo" -ForegroundColor Green
 }
 
-# ─── 7. Tamanho do vault ───
+# ─── 8. Métricas ───
 Write-Host "── 8. Métricas ──" -ForegroundColor Yellow
 $totalMd = (Get-ChildItem -Recurse -Filter "*.md" -File | Where-Object { $_.FullName -notmatch '\\\.git\\' }).Count
 $totalPastas = (Get-ChildItem -Recurse -Directory | Where-Object { $_.FullName -notmatch '\\\.git\\' }).Count
