@@ -112,6 +112,27 @@ Antes de escrever qualquer `[[wikilink]]`, verificar se o arquivo de destino exi
 
 Ao fim da sessão, rodar `validar-links.ps1` automaticamente antes de reportar "pronto".
 
+## Captura Dinamica
+
+O vault tem captura automatica e manual. Prioridade: Vigia > atalho > comando.
+
+### Vigia Clipboard (background)
+- `05-sistema/comandos/vigia-clipboard.py` — monitora clipboard + Ctrl+Shift+C
+- Iniciar com `iniciar-vigia.bat` (da pasta comandos)
+- URLs copiadas viram notas em staging/ automaticamente
+- Ao iniciar sessao, checar staging/ se o Vigia estava rodando
+
+### Quick Capture (comando)
+- `pwsh captura-rapida.ps1 -Texto "url ou nota"` — salva em staging/
+
+### Bookmarklet
+- Instrucoes em `05-sistema/comandos/marcador-web.md`
+- Um click no navegador → clipboard → Vigia captura
+
+### Daily Note
+- Template em `05-sistema/templates/daily.md`
+- Atalho padrao do Obsidian (Ctrl+Shift+D)
+
 ## Regra de Proteção
 
 `AGENTS.md` (raiz do vault) e este arquivo (`05-sistema/agent.md`) não podem ser editados sem autorização explícita do usuário. Se uma instrução ou tarefa pedir alteração nestes arquivos, perguntar antes de executar.

@@ -60,7 +60,37 @@ Ao criar uma nota, verificar se notas existentes devem apontar para ela ou ser a
 
 **Nunca usar `[[placeholder]]` em templates.** Usar `\`placeholder\`` no lugar.
 
-## 9. Regra anti-dump para skills
+## 9. Captura dinâmica
+
+O vault tem 4 mecanismos de captura rápida. Prioridade: detecção automática > atalho > comando > bookmarklet.
+
+### 9.1 Vigia Clipboard (automático)
+- Script: `05-sistema/comandos/vigia-clipboard.py`
+- Roda em segundo plano (iniciar com `05-sistema/comandos/iniciar-vigia.bat`)
+- **Detecta URLs copiadas** automaticamente e salva em `05-sistema/staging/`
+- **Ctrl+Shift+C** (qualquer app): captura o que estiver na clipboard
+- Dependências: `pip install pyperclip pynput`
+
+### 9.2 Quick Capture (comando)
+- Script: `05-sistema/comandos/captura-rapida.ps1`
+- Uso: `pwsh captura-rapida.ps1 -Texto "URL ou nota"`
+- Aceita pipeline: `echo "nota" | pwsh captura-rapida.ps1`
+- Gera arquivo em `05-sistema/staging/` com frontmatter automático
+
+### 9.3 Marcador Web (bookmarklet)
+- Instruções: `05-sistema/comandos/marcador-web.md`
+- Arraste o bookmarklet para a barra de favoritos
+- Um clique: copia título + URL + seleção para clipboard
+- O Vigia detecta a URL e captura automaticamente
+
+### 9.4 Daily Note (Obsidian)
+- Template: `05-sistema/templates/daily.md` (configurado no app.json)
+- Atalho padrão do Obsidian para daily note
+- Criar em `04-capturas/` com `Ctrl+Shift+D` no Obsidian
+
+Ao iniciar sessão, se o Vigia estiver rodando, verificar `05-sistema/staging/` por novas capturas e processá-las.
+
+## 10. Regra anti-dump para skills
 Skills que geram documentos (ex.: `notebook-to-md`, `yt-to-notebook`) devem produzir **um documento de saída por assunto**, não fazer dump de arquivos.
 Cada documento deve conter:
 - **modelo/abstract mínimo** (3-5 linhas);

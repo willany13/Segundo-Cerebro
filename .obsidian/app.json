@@ -2,5 +2,10 @@
   "openBehavior": "",
   "alwaysUpdateLinks": true,
   "showUnsupportedFiles": true,
-  "promptDelete": false
+  "promptDelete": false,
+  "dailyNotes": {
+    "folder": "04-capturas",
+    "template": "05-sistema/templates/daily.md",
+    "format": "YYYY-MM-DD"
+  }
 }
