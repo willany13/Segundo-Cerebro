@@ -9,47 +9,47 @@
   "colorGroups": [
     {
       "query": "tag:#tipo/projeto",
-      "color": { "a": 1, "rgb": 16753920 }
+      "color": { "a": 1, "rgb": 16737792 }
     },
     {
       "query": "tag:#tipo/captura",
-      "color": { "a": 1, "rgb": 65535 }
+      "color": { "a": 1, "rgb": 13422 }
     },
     {
       "query": "tag:#tipo/conhecimento",
-      "color": { "a": 1, "rgb": 10494192 }
+      "color": { "a": 1, "rgb": 10066176 }
     },
     {
       "query": "tag:#tipo/tutorial",
-      "color": { "a": 1, "rgb": 16761035 }
+      "color": { "a": 1, "rgb": 16738674 }
     },
     {
       "query": "tag:#area/financeiro",
-      "color": { "a": 1, "rgb": 65280 }
+      "color": { "a": 1, "rgb": 52326 }
     },
     {
       "query": "tag:#area/programacao",
-      "color": { "a": 1, "rgb": 255 }
+      "color": { "a": 1, "rgb": 3381759 }
     },
     {
       "query": "tag:#ferramenta",
-      "color": { "a": 1, "rgb": 16776960 }
+      "color": { "a": 1, "rgb": 16766720 }
     },
     {
       "query": "tag:#projeto/hermes",
-      "color": { "a": 1, "rgb": 16711680 }
+      "color": { "a": 1, "rgb": 16724243 }
     },
     {
       "query": "tag:#conceito/skill",
-      "color": { "a": 1, "rgb": 16738740 }
+      "color": { "a": 1, "rgb": 16724255 }
     },
     {
       "query": "tag:#conceito/agente-ia",
-      "color": { "a": 1, "rgb": 16744448 }
+      "color": { "a": 1, "rgb": 13399039 }
     },
     {
       "query": "tag:#fluxo",
-      "color": { "a": 1, "rgb": 65535 }
+      "color": { "a": 1, "rgb": 65484 }
     }
   ],
   "collapse-display": false,
