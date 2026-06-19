@@ -24,6 +24,9 @@ Dados externos já processados, internalizados e prontos para referência.
 ## Notas
 
 - [[ferramentas/extended-graph-customizacao-graph-view-obsidian.md]] — customização do graph view do Obsidian com Extended Graph
+- [[ferramentas/how-to-debug-scripts-in-windows-powershell-ise.md]] — depuração de scripts no Windows PowerShell ISE (base MS Learn)
+- [[2026-06-18-modern-computational-pipeline-patterns-and-practical-implementations.md]] — placeholder para nota NotebookLM
+- [[2025-06-18-powershell-debugging-remote-editing-and-scripting-best-practices.md]] — placeholder para nota NotebookLM
 
 ## Projetos relacionados
 
