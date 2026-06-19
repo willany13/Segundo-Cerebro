@@ -4,6 +4,16 @@ fonte: skill local `autonomous-ai-agents` v1.1.0
 data: 2026-06-18
 tags:
   - grupo/skills
+  - area/programacao
+  - conceito/agente-ia
+  - conceito/api
+  - conceito/cli
+  - conceito/inteligencia-artificial
+  - conceito/skill
+  - fluxo/validacao
+  - linguagem/python
+  - projeto/hermes
+  - tipo/projeto
 ---
 
 # 🔑 autonomous-ai-agents — Orquestrador Mixture of Agents para Hermes

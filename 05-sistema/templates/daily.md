@@ -1,6 +1,9 @@
 ---
 tags:
   - grupo/captura
+  - conceito/inteligencia-artificial
+  - fluxo/captura
+  - fluxo/staging
 ---
 
 # {{date:YYYY-MM-DD}} — {{title}}

@@ -2,6 +2,27 @@
 title: Mapa de Conhecimento
 tags:
   - grupo/nucleo
+  - area/financeiro
+  - area/programacao
+  - conceito/agente-ia
+  - conceito/api
+  - conceito/automacao
+  - conceito/cli
+  - conceito/inteligencia-artificial
+  - conceito/skill
+  - ferramenta/git
+  - ferramenta/github
+  - ferramenta/notebooklm
+  - ferramenta/obsidian
+  - fluxo/captura
+  - fluxo/staging
+  - fluxo/validacao
+  - linguagem/powershell
+  - linguagem/python
+  - linguagem/shell
+  - projeto/hermes
+  - tipo/conhecimento
+  - tipo/projeto
 ---
 
 # Mapa de Conhecimento

@@ -2,6 +2,14 @@
 title: "Python prático — automação e scripts"
 tags:
   - grupo/conhecimento
+  - area/financeiro
+  - conceito/api
+  - conceito/cli
+  - conceito/inteligencia-artificial
+  - ferramenta/git
+  - ferramenta/github
+  - fluxo/captura
+  - linguagem/python
 ---
 
 # Python prático — automação e scripts

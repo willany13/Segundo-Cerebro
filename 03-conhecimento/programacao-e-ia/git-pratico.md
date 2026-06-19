@@ -2,6 +2,11 @@
 title: "Git prático — fluxos e automação"
 tags:
   - grupo/conhecimento
+  - conceito/inteligencia-artificial
+  - ferramenta/git
+  - ferramenta/github
+  - ferramenta/obsidian
+  - linguagem/shell
 ---
 
 # Git prático — fluxos e automação

@@ -1,6 +1,19 @@
 ---
 tags:
   - tipo/referencia
+  - conceito/inteligencia-artificial
+  - ferramenta/git
+  - ferramenta/github
+  - ferramenta/telegram
+  - fluxo/captura
+  - fluxo/staging
+  - fluxo/validacao
+  - linguagem/powershell
+  - linguagem/python
+  - linguagem/shell
+  - projeto/hermes
+  - tipo/captura
+  - tipo/projeto
 ---
 
 # Bot Telegram — Captura mobile

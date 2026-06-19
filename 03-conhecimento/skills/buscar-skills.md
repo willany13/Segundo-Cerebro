@@ -1,6 +1,9 @@
 ---
 tags:
   - tipo/conhecimento
+  - conceito/inteligencia-artificial
+  - conceito/skill
+  - tipo/projeto
 ---
 # Buscar Skills — Descoberta de Skills
 

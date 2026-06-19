@@ -2,6 +2,13 @@
 title: "APIs prático — REST, autenticação, rate limit"
 tags:
   - grupo/conhecimento
+  - conceito/api
+  - conceito/inteligencia-artificial
+  - ferramenta/git
+  - ferramenta/github
+  - linguagem/powershell
+  - linguagem/python
+  - linguagem/shell
 ---
 
 # APIs prático — REST, autenticação, rate limit

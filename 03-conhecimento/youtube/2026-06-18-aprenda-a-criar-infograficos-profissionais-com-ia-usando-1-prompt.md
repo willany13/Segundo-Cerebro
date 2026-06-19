@@ -2,6 +2,8 @@
 titulo: Aprenda como criar infográficos profissionais com inteligência artificial usando apenas 1 prompt
 fonte: NotebookLM — vídeo https://www.youtube.com/watch?v=551vtXQksRE
 data: 2026-06-18
+  - conceito/inteligencia-artificial
+  - ferramenta/notebooklm
 ---
 
 # 🔑 Aprenda como criar infográficos profissionais com inteligência artificial usando apenas 1 prompt

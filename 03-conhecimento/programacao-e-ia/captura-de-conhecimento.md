@@ -6,6 +6,16 @@ status: fluxo-vivo
 projetos:
   - 02-projetos/skill-hermes.md
   - 02-projetos/projetos-de-ia.md
+  - conceito/agente-ia
+  - conceito/inteligencia-artificial
+  - conceito/skill
+  - fluxo/backup
+  - fluxo/captura
+  - fluxo/staging
+  - fluxo/validacao
+  - projeto/hermes
+  - tipo/captura
+  - tipo/projeto
 ---
 tags:
   - grupo/conhecimento

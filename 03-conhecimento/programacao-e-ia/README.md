@@ -2,6 +2,22 @@
 titulo: Programação e IA
 tags:
   - grupo/conhecimento
+  - conceito/api
+  - conceito/cli
+  - conceito/inteligencia-artificial
+  - conceito/skill
+  - ferramenta/git
+  - ferramenta/github
+  - ferramenta/notebooklm
+  - ferramenta/obsidian
+  - fluxo/captura
+  - fluxo/staging
+  - fluxo/validacao
+  - linguagem/powershell
+  - linguagem/python
+  - linguagem/shell
+  - projeto/hermes
+  - tipo/projeto
 ---
 
 # Programação e IA

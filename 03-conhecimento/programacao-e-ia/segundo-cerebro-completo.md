@@ -3,6 +3,15 @@ titulo: Segundo Cérebro com Obsidian e Claude — versão completa
 fonte: NotebookLM — "Como Construir seu SEGUNDO CÉREBRO de IA (Claude Code + Obsidian)"
 data: 2026-06-18
 status: completo
+  - area/financeiro
+  - area/programacao
+  - conceito/agente-ia
+  - conceito/cli
+  - conceito/inteligencia-artificial
+  - conceito/skill
+  - ferramenta/notebooklm
+  - ferramenta/obsidian
+  - tipo/projeto
 ---
 tags:
   - grupo/conhecimento

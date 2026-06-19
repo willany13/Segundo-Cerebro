@@ -1,6 +1,9 @@
 ---
 tags:
   - grupo/projetos
+  - area/financeiro
+  - conceito/inteligencia-artificial
+  - tipo/projeto
 ---
 <!-- tema:projetos -->
 # Controle de Ativos

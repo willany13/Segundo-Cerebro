@@ -2,6 +2,12 @@
 titulo: The Infinite Memory System: Integrating NotebookLM, Claude, and Obsidian
 fonte: Segundo Cérebro / reformatação automática
 data: 2026-06-18
+  - conceito/inteligencia-artificial
+  - conceito/skill
+  - ferramenta/notebooklm
+  - ferramenta/obsidian
+  - projeto/hermes
+  - tipo/projeto
 ---
 
 # 🔖 The Infinite Memory System: Integrating NotebookLM, Claude, and Obsidian

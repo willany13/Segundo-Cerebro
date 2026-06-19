@@ -1,6 +1,14 @@
 ---
 tags:
   - grupo/sistema
+  - conceito/api
+  - conceito/inteligencia-artificial
+  - conceito/skill
+  - ferramenta/telegram
+  - fluxo/captura
+  - fluxo/staging
+  - tipo/projeto
+  - tipo/referencia
 ---
 # Roteamento — Tabela oficial
 

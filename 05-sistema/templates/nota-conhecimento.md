@@ -3,6 +3,8 @@ tags:
   - tipo/conhecimento
 data: {{AAAA-MM-DD}}
 fonte: {{origem}}
+  - conceito/inteligencia-artificial
+  - tipo/projeto
 ---
 
 # {{Título do Conhecimento}}

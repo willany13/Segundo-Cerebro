@@ -2,6 +2,15 @@
 titulo: "Mão na massa — padrões práticos do vault"
 tags:
   - grupo/conhecimento
+  - conceito/inteligencia-artificial
+  - conceito/skill
+  - ferramenta/git
+  - ferramenta/notebooklm
+  - ferramenta/obsidian
+  - fluxo/staging
+  - fluxo/validacao
+  - linguagem/powershell
+  - linguagem/shell
 ---
 
 # Mão na massa — padrões práticos do vault

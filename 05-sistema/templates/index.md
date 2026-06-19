@@ -2,6 +2,10 @@
 title: Templates de nota
 tags:
   - grupo/sistema
+  - conceito/api
+  - conceito/inteligencia-artificial
+  - fluxo/captura
+  - tipo/projeto
 ---
 
 # Templates de nota

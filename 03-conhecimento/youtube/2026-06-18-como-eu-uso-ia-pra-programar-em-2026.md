@@ -2,6 +2,19 @@
 titulo: Como eu uso IA pra programar em 2026
 fonte: NotebookLM — vídeo https://www.youtube.com/watch?v=7nN4ayK79oc
 data: 2026-06-18
+  - area/programacao
+  - conceito/agente-ia
+  - conceito/automacao
+  - conceito/cli
+  - conceito/inteligencia-artificial
+  - conceito/skill
+  - ferramenta/git
+  - ferramenta/github
+  - ferramenta/notebooklm
+  - ferramenta/whisper
+  - fluxo/validacao
+  - projeto/hermes
+  - tipo/projeto
 ---
 
 # 🔑 Como eu uso IA pra programar em 2026

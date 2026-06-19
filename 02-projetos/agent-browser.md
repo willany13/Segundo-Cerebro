@@ -1,6 +1,9 @@
 ---
 tags:
   - grupo/projetos
+  - conceito/agente-ia
+  - conceito/skill
+  - tipo/projeto
 ---
 <!-- tema:projetos -->
 # Agent Browser

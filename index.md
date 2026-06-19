@@ -3,6 +3,25 @@ title: Índice do Segundo Cérebro
 atualizado: 2026-06-18
 tags:
   - grupo/nucleo
+  - area/financeiro
+  - area/programacao
+  - conceito/api
+  - conceito/automacao
+  - conceito/cli
+  - conceito/inteligencia-artificial
+  - conceito/skill
+  - ferramenta/git
+  - ferramenta/github
+  - ferramenta/notebooklm
+  - ferramenta/obsidian
+  - ferramenta/telegram
+  - fluxo/captura
+  - fluxo/staging
+  - linguagem/powershell
+  - linguagem/python
+  - linguagem/shell
+  - projeto/hermes
+  - tipo/projeto
 ---
 
 # Índice do Segundo Cérebro

@@ -1,6 +1,17 @@
 ---
 tags:
   - grupo/projetos
+  - area/financeiro
+  - area/programacao
+  - conceito/agente-ia
+  - conceito/cli
+  - conceito/inteligencia-artificial
+  - conceito/skill
+  - ferramenta/notebooklm
+  - fluxo/captura
+  - fluxo/validacao
+  - projeto/hermes
+  - tipo/projeto
 ---
 <!-- tema:projetos -->
 # Skill-Hermes

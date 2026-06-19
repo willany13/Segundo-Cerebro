@@ -2,6 +2,17 @@
 titulo: Informações Filtradas
 fonte: Segundo Cérebro / reformatação automática
 data: 2026-06-18
+  - area/financeiro
+  - area/programacao
+  - conceito/inteligencia-artificial
+  - conceito/skill
+  - ferramenta/notebooklm
+  - ferramenta/obsidian
+  - fluxo/captura
+  - linguagem/powershell
+  - linguagem/shell
+  - projeto/hermes
+  - tipo/projeto
 ---
 
 # Informações Filtradas

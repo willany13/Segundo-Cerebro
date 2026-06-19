@@ -4,6 +4,15 @@ fonte: conhecimento próprio / documentação de provedores
 data: 2026-06-18
 tags:
   - grupo/skills
+  - conceito/agente-ia
+  - conceito/api
+  - conceito/cli
+  - conceito/inteligencia-artificial
+  - conceito/skill
+  - ferramenta/notebooklm
+  - fluxo/captura
+  - linguagem/python
+  - projeto/hermes
 ---
 
 # ⚠️ Limites e fallback de provedores de IA no Hermes

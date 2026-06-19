@@ -6,6 +6,11 @@ tags:
   - obsidian
   - graph-view
   - segundo-cerebro
+  - conceito/api
+  - conceito/cli
+  - conceito/inteligencia-artificial
+  - ferramenta/obsidian
+  - tipo/projeto
 ---
 
 # Graph View do Obsidian — utilidade, configuração e customização

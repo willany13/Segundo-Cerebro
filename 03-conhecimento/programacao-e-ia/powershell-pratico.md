@@ -2,6 +2,10 @@
 title: "PowerShell prático — scripts robustos"
 tags:
   - grupo/conhecimento
+  - conceito/inteligencia-artificial
+  - fluxo/validacao
+  - linguagem/powershell
+  - linguagem/shell
 ---
 
 # PowerShell prático — scripts robustos

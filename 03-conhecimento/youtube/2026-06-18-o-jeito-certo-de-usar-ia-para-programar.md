@@ -5,6 +5,9 @@ tags:
   - grupo/metodologia
   - grupo/ia
 fonte: YouTube — Sujeito programador (https://www.youtube.com/watch?v=UOKCuEzeOAo)
+  - area/programacao
+  - conceito/inteligencia-artificial
+  - tipo/projeto
 ---
 
 # O jeito certo de usar IA para programar

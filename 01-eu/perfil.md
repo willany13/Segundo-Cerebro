@@ -1,6 +1,14 @@
 ---
 tags:
   - grupo/pessoal
+  - area/financeiro
+  - conceito/inteligencia-artificial
+  - conceito/skill
+  - ferramenta/notebooklm
+  - ferramenta/obsidian
+  - linguagem/python
+  - projeto/hermes
+  - tipo/projeto
 ---
 # Perfil
 

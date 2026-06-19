@@ -2,6 +2,9 @@
 titulo: Pipeline Nota de Corretagem
 fonte: Segundo Cérebro / reformatação automática
 data: 2026-06-18
+  - area/financeiro
+  - conceito/skill
+  - tipo/projeto
 ---
 
 # 🔖 Pipeline Nota de Corretagem

@@ -4,6 +4,8 @@ fonte: NotebookLM (pendente ID)
 data: 2026-06-18
 tags:
   - grupo/informacoes-filtradas
+  - ferramenta/notebooklm
+  - fluxo/validacao
 ---
 
 # Modern Computational Pipeline Patterns and Practical Implementations

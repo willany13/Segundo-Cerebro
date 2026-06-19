@@ -1,6 +1,11 @@
 ---
 tags:
   - tipo/referencia
+  - conceito/cli
+  - conceito/inteligencia-artificial
+  - fluxo/captura
+  - fluxo/staging
+  - linguagem/javascript
 ---
 
 # Marcador Web — Bookmarklet

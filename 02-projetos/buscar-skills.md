@@ -1,6 +1,8 @@
 ---
 tags:
   - grupo/projetos
+  - conceito/skill
+  - tipo/projeto
 ---
 <!-- tema:projetos -->
 # Buscar Skills

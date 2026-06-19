@@ -6,6 +6,11 @@ tags:
   - tema/agentes
   - tema/hermes
   - tema/opencode
+  - area/programacao
+  - conceito/agente-ia
+  - conceito/inteligencia-artificial
+  - conceito/skill
+  - projeto/hermes
 ---
 
 # Achado — OpenCode no Windows

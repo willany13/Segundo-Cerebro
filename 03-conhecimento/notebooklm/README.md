@@ -1,6 +1,12 @@
 ---
 tags:
   - tipo/indice
+  - conceito/cli
+  - conceito/inteligencia-artificial
+  - conceito/skill
+  - ferramenta/notebooklm
+  - projeto/hermes
+  - tipo/projeto
 ---
 
 # NotebookLM — Notas importadas

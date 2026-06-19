@@ -2,6 +2,10 @@
 titulo: Mercado Financeiro
 tags:
   - grupo/conhecimento
+  - area/financeiro
+  - conceito/inteligencia-artificial
+  - conceito/skill
+  - tipo/projeto
 ---
 
 # Mercado Financeiro

@@ -2,6 +2,15 @@
 titulo: Automação para Afiliados com Python + GitHub Actions
 fonte: NotebookLM — vídeo https://www.youtube.com/watch?v=px7O23SvIn8
 data: 2026-06-18
+  - conceito/api
+  - conceito/cli
+  - conceito/inteligencia-artificial
+  - ferramenta/git
+  - ferramenta/github
+  - ferramenta/notebooklm
+  - fluxo/validacao
+  - linguagem/python
+  - tipo/projeto
 ---
 
 # 🔑 Automação para Afiliados com Python + GitHub Actions

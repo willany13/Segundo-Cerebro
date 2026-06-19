@@ -2,6 +2,17 @@
 titulo: Skills
 tags:
   - grupo/conhecimento
+  - area/financeiro
+  - area/programacao
+  - conceito/agente-ia
+  - conceito/cli
+  - conceito/inteligencia-artificial
+  - conceito/skill
+  - ferramenta/notebooklm
+  - ferramenta/obsidian
+  - fluxo/captura
+  - projeto/hermes
+  - tipo/projeto
 ---
 
 # Skills

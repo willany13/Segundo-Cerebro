@@ -1,6 +1,11 @@
 ---
 tags:
   - grupo/projetos
+  - area/programacao
+  - conceito/inteligencia-artificial
+  - fluxo/captura
+  - fluxo/validacao
+  - tipo/projeto
 ---
 <!-- tema:projetos -->
 # Sistema de Criação de Conteúdo com IA

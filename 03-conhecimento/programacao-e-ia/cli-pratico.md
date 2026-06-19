@@ -2,6 +2,11 @@
 title: "CLI prático — ferramentas de linha de comando"
 tags:
   - grupo/conhecimento
+  - conceito/cli
+  - ferramenta/git
+  - linguagem/powershell
+  - linguagem/python
+  - linguagem/shell
 ---
 
 # CLI prático — ferramentas de linha de comando

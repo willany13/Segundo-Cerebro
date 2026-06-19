@@ -2,6 +2,11 @@
 titulo: NotebookLM vai mudar pra sempre a maneira que você usa o Claude
 fonte: YouTube / NotebookLM / vídeo Well Pires
 data: 2026-06-18
+  - conceito/agente-ia
+  - conceito/inteligencia-artificial
+  - conceito/skill
+  - ferramenta/notebooklm
+  - ferramenta/obsidian
 ---
 
 # 🔖 NotebookLM vai mudar pra sempre a maneira que você usa o Claude

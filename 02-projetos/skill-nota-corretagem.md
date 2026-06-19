@@ -1,6 +1,10 @@
 ---
 tags:
   - grupo/projetos
+  - area/financeiro
+  - conceito/inteligencia-artificial
+  - conceito/skill
+  - tipo/projeto
 ---
 <!-- tema:projetos -->
 # Skill Nota-Corretagem

@@ -6,6 +6,16 @@ tags:
   - tema/agentes
   - tema/hermes
   - tema/mimo
+  - conceito/agente-ia
+  - conceito/api
+  - conceito/cli
+  - conceito/inteligencia-artificial
+  - ferramenta/git
+  - ferramenta/github
+  - fluxo/captura
+  - linguagem/shell
+  - projeto/hermes
+  - tipo/projeto
 ---
 
 # Achado — MiMo Code e Hermes

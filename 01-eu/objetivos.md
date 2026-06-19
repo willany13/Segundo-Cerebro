@@ -1,6 +1,13 @@
 ---
 tags:
   - grupo/pessoal
+  - conceito/agente-ia
+  - conceito/inteligencia-artificial
+  - conceito/skill
+  - fluxo/captura
+  - fluxo/validacao
+  - projeto/hermes
+  - tipo/projeto
 ---
 <!-- tema:objetivos -->
 # Objetivos

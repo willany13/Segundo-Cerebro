@@ -1,6 +1,11 @@
 ---
 tags:
   - tipo/indice
+  - conceito/inteligencia-artificial
+  - conceito/skill
+  - ferramenta/notebooklm
+  - projeto/hermes
+  - tipo/projeto
 ---
 
 # YouTube — Notas de vídeos

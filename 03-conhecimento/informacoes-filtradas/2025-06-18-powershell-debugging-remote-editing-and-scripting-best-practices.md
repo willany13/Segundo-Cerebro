@@ -4,6 +4,10 @@ fonte: NotebookLM (pendente ID)
 data: 2026-06-18
 tags:
   - grupo/informacoes-filtradas
+  - ferramenta/notebooklm
+  - fluxo/validacao
+  - linguagem/powershell
+  - linguagem/shell
 ---
 
 # PowerShell Debugging, Remote Editing, and Scripting Best Practices

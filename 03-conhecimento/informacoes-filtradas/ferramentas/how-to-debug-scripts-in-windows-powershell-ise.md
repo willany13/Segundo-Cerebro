@@ -4,6 +4,11 @@ fonte: https://learn.microsoft.com/en-us/powershell/scripting/windows-powershell
 data: 2026-06-18
 tags:
   - grupo/ferramentas
+  - conceito/cli
+  - conceito/inteligencia-artificial
+  - linguagem/powershell
+  - linguagem/shell
+  - tipo/referencia
 ---
 
 # 🔧 How to Debug Scripts in Windows PowerShell ISE

@@ -2,6 +2,11 @@
 titulo: O Guia Definitivo de ENGENHARIA DE PROMPT (Como Dominar a IA)
 fonte: NotebookLM — vídeo https://www.youtube.com/watch?v=xJzLJMRxFIc
 data: 2026-06-18
+  - area/programacao
+  - conceito/agente-ia
+  - conceito/inteligencia-artificial
+  - conceito/skill
+  - ferramenta/notebooklm
 ---
 
 # 🔑 O Guia Definitivo de ENGENHARIA DE PROMPT (Como Dominar a IA)

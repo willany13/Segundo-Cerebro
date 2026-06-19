@@ -3,6 +3,7 @@ tags:
   - tipo/projeto
 status: em andamento
 inicio: {{AAAA-MM-DD}}
+  - conceito/skill
 ---
 
 # {{Nome do Projeto}}

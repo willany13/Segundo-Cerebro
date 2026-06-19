@@ -1,6 +1,11 @@
 ---
 tags:
   - tipo/conhecimento
+  - conceito/api
+  - conceito/cli
+  - conceito/inteligencia-artificial
+  - conceito/skill
+  - tipo/projeto
 ---
 # Agent Browser — Automação de Navegador
 

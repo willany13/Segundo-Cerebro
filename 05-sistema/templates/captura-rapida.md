@@ -3,6 +3,7 @@ tags:
   - tipo/captura
 data: {{AAAA-MM-DD}}
 fonte: {{link ou origem}}
+  - fluxo/captura
 ---
 
 # {{Título da Captura}}

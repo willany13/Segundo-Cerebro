@@ -1,6 +1,13 @@
 ---
 tags:
   - grupo/projetos
+  - area/financeiro
+  - area/programacao
+  - conceito/agente-ia
+  - conceito/inteligencia-artificial
+  - conceito/skill
+  - projeto/hermes
+  - tipo/projeto
 ---
 <!-- tema:projetos -->
 # Projetos de IA
