@@ -103,7 +103,13 @@ Ao iniciar sessão, se o Vigia estiver rodando, verificar `05-sistema/staging/` 
 - `05-sistema/comandos/extrair-pdf.ps1` — extrai texto de PDFs em staging e gera `.md`
 - Dependência: Python + pdfplumber (já instalado)
 
-### 9.7 Busca rápida
+### 9.7 Bot Telegram (mobile)
+- Script: `05-sistema/comandos/bot-telegram.py`
+- Setup: `05-sistema/comandos/bot-telegram.md`
+- Envia mensagem, URL, foto ou documento do celular → cai direto em staging
+- Comandos: `/capturar`, `/processar`, `/status`
+
+### 9.8 Busca rápida
 - `05-sistema/comandos/busca-vault.ps1` — busca termo no vault com trechos
 - `pwsh busca-vault.ps1 -Termo "skill hermes" -Pilar "03-conhecimento" -Contexto 3`
 

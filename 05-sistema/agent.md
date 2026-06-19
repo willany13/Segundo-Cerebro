@@ -150,6 +150,10 @@ O vault tem captura automatica e manual. Prioridade: Vigia > atalho > comando.
 ### PDF automatico
 - `extrair-pdf.ps1` — extrai texto de PDFs em staging para .md
 
+### Bot Telegram
+- `bot-telegram.py` — captura de qualquer lugar (celular, PC) via Telegram
+- Setup em `bot-telegram.md`
+
 ### Busca rapida
 - `busca-vault.ps1 -Termo "o que buscar"` — busca com trechos no vault todo
 
