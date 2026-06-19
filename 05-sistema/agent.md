@@ -133,6 +133,31 @@ O vault tem captura automatica e manual. Prioridade: Vigia > atalho > comando.
 - Template em `05-sistema/templates/daily.md`
 - Atalho padrao do Obsidian (Ctrl+Shift+D)
 
+### Staging automatico
+- `observar-staging.ps1` — vigia pasta e processa auto
+- `expurgar-staging.ps1 -Executar` — limpa >7d / >30d (rodar ao iniciar sessao)
+
+### PDF automatico
+- `extrair-pdf.ps1` — extrai texto de PDFs em staging para .md
+
+### Busca rapida
+- `busca-vault.ps1 -Termo "o que buscar"` — busca com trechos no vault todo
+
+### Captura por voz
+- `captura-voz.py` — grava microfone e transcreve pra staging (whisper)
+- `python captura-voz.py --duracao 15`
+
+### Revisao semanal
+- `revisao-semanal.ps1` — relatorio de commits + notas + estatisticas
+
+### Auto-backup
+- `auto-backup.ps1` — commit + push automatico (rodar no fim da sessao)
+
+### Fim de sessao estendido
+1. `expurgar-staging.ps1 -Executar`
+2. `auto-backup.ps1`
+3. `validar-links.ps1`
+
 ## Regra de Proteção
 
 `AGENTS.md` (raiz do vault) e este arquivo (`05-sistema/agent.md`) não podem ser editados sem autorização explícita do usuário. Se uma instrução ou tarefa pedir alteração nestes arquivos, perguntar antes de executar.

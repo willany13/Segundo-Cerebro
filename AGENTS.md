@@ -90,7 +90,26 @@ O vault tem 4 mecanismos de captura rápida. Prioridade: detecção automática 
 
 Ao iniciar sessão, se o Vigia estiver rodando, verificar `05-sistema/staging/` por novas capturas e processá-las.
 
-## 10. Regra anti-dump para skills
+### 9.5 Staging automático
+- `05-sistema/comandos/observar-staging.ps1` — vigia a pasta staging e processa novos `.md` com `processar-staging.ps1 -AutoApprove`
+- `05-sistema/comandos/expurgar-staging.ps1` — limpa staging (>7d archive, >30d candidato exclusão)
+- Executar `expurgar-staging.ps1 -Executar` ao iniciar sessão
+
+### 9.6 PDF automático
+- `05-sistema/comandos/extrair-pdf.ps1` — extrai texto de PDFs em staging e gera `.md`
+- Dependência: Python + pdfplumber (já instalado)
+
+### 9.7 Busca rápida
+- `05-sistema/comandos/busca-vault.ps1` — busca termo no vault com trechos
+- `pwsh busca-vault.ps1 -Termo "skill hermes" -Pilar "03-conhecimento" -Contexto 3`
+
+## 10. Fim de sessão estendido
+Ao encerrar, executar nesta ordem:
+1. `pwsh expurgar-staging.ps1 -Executar`
+2. `pwsh auto-backup.ps1` (commit + push automático)
+3. `pwsh validar-links.ps1`
+
+## 11. Regra anti-dump para skills
 Skills que geram documentos (ex.: `notebook-to-md`, `yt-to-notebook`) devem produzir **um documento de saída por assunto**, não fazer dump de arquivos.
 Cada documento deve conter:
 - **modelo/abstract mínimo** (3-5 linhas);
