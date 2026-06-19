@@ -17,13 +17,11 @@ Write-Host "══════════════════════�
 Write-Host "`n[1/2] Expurgando staging..." -ForegroundColor Yellow
 & "pwsh" "-NoProfile", "-File", $expurgar, "-Executar"
 
-# 2. Verificar capturas pendentes
+# 2. Contar capturas pendentes (sem processar)
 Write-Host "`n[2/2] Verificando capturas pendentes..." -ForegroundColor Yellow
 $pendentes = Get-ChildItem -Path $staging -Filter "*.md" -File | Where-Object { $_.DirectoryName -notmatch 'archive' }
 if ($pendentes) {
-    Write-Host "   $($pendentes.Count) captura(s) pendente(s) em staging:" -ForegroundColor Yellow
-    $pendentes | ForEach-Object { Write-Host "   - $($_.Name) ($($_.LastWriteTime.ToString('yyyy-MM-dd HH:mm')))" }
-    Write-Host "   Processe com: pwsh processar-staging.ps1" -ForegroundColor Gray
+    Write-Host "   $($pendentes.Count) captura(s) pendente(s) — serao processadas em segundo plano." -ForegroundColor Yellow
 } else {
     Write-Host "   Nenhuma captura pendente." -ForegroundColor Green
 }

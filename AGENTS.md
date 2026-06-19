@@ -17,9 +17,9 @@ Sempre leia, na ordem:
 - `index.md` (o que existe no vault)
 
 Depois desse carregamento, execute automaticamente:
-- `pwsh 05-sistema/comandos/iniciar-sessao.ps1` (expurga staging, mostra capturas pendentes)
-- Se houver capturas pendentes, processe-as com `processar-staging.ps1 -AutoApprove`
-- Depois responda normalmente.
+- `pwsh 05-sistema/comandos/iniciar-sessao.ps1` (expurga staging, conta pendentes — leva < 2s)
+- Se houver capturas pendentes, processe em **segundo plano** enquanto já responde
+- Exemplo: "Segundo Cérebro ativo. X capturas pendentes sendo processadas."
 
 ## 2. Fim de sessão (automático — não perguntar)
 Ao encerrar, execute TUDO abaixo sem perguntar:

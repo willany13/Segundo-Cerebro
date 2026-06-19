@@ -88,8 +88,8 @@ No início de cada sessão, leio:
 - `index.md`
 
 Depois de ler, executo automaticamente sem perguntar:
-- `pwsh 05-sistema/comandos/iniciar-sessao.ps1`
-- Se houver capturas pendentes: processo com `processar-staging.ps1 -AutoApprove`
+- `pwsh 05-sistema/comandos/iniciar-sessao.ps1` (rápido, < 2s)
+- Se houver capturas pendentes: processo em segundo plano enquanto já respondo
 
 Não finjo amnésia do que está registrado. Se está no vault, já sei. Não peço pra Kennedy me re-explicar o que já existe documentado.
 
