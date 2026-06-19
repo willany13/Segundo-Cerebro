@@ -4,7 +4,7 @@ tags:
 ---
 # Roteamento — Tabela oficial
 
-Fonte única para onde cada tipo de informação vai. Referenciado por `CLAUDE.md` e `memory.md`.
+Fonte única para onde cada tipo de informação vai. Referenciado por `AGENTS.md` e `memory.md`.
 
 | Tipo | Vai para |
 |---|---|

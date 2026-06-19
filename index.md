@@ -7,7 +7,7 @@ tags:
 
 # Índice do Segundo Cérebro
 
-- [[CLAUDE.md]]
+- [[AGENTS.md]]
 - [[05-sistema/agent.md]]
 - [[05-sistema/memory.md]]
 - [[05-sistema/roteamento.md]]

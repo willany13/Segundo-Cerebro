@@ -23,7 +23,7 @@ Perfil, preferências e decisões datadas. Atualizado em 2026-06-18.
 - 2026-06-18: yt-to-notebook reformulado como skill YouTube-específica (antes era cópia do notebook-to-md). Criados scripts get-yt-metadata.ps1, create-from-yt.ps1, yt-wrapper.ps1, setup.ps1, healthcheck.ps1, integrate-vault.ps1. Referências deduplicadas.
 - 2026-06-18: notebook-to-md reconstruído como skill base completa (antes era stub). SKILL.md com pipeline extrair → formatar/entregar, compartilha references/ e scripts/ com yt-to-notebook.
 - 2026-06-18: README.md do Skill-Hermes atualizado com tabela de skills e status.
-- 2026-06-18: tabela de roteamento extraída para `05-sistema/roteamento.md` (fonte única). CLAUDE.md e memory.md referenciam ela.
+- 2026-06-18: tabela de roteamento extraída para `05-sistema/roteamento.md` (fonte única). AGENTS.md e memory.md referenciam ela.
 - 2026-06-18: fluxo de captura fluido implantado (`05-sistema/comandos/input-rec-ouperacao.md`).
 - 2026-06-18: padronização de arquivos de visão geral para `README.md` por tema.
 - 2026-06-18: remoção automática de `Sem título`, `Untitled`, `.base` e `.canvas` fora dos pilares ativada por ação.
@@ -44,7 +44,7 @@ Perfil, preferências e decisões datadas. Atualizado em 2026-06-18.
 - 2026-06-18: `projetos-de-ia.md` expandido como guarda-chuva listando todos os projetos vinculados. com stack (Python), área (IA/ML + Dev geral), interesses (mercado financeiro, Obsidian, ferramentas IA).
 - 2026-06-18: `infinite-memory-system.md` e `captura-de-conhecimento.md` vinculados a `skill-hermes.md` e `projetos-de-ia.md`.
 - 2026-06-18: `revisao-semanal.md` criado — checklist de manutenção periódica.
-- 2026-06-18: removida duplicação de regras do vault do `agent.md` (eram redundantes com CLAUDE.md).
+- 2026-06-18: removida duplicação de regras do vault do `agent.md` (eram redundantes com AGENTS.md).
 - 2026-06-18: fluxo `validar-staging` criado em `05-sistema/comandos/validar-staging.md` com checklist de duplicidade, formato, conteúdo similar e roteamento.
 - 2026-06-18: nota `2026-06-18-automacao-para-afiliados-com-python-e-github-actions.md` gerada via NotebookLM a partir do vídeo `px7O23SvIn8` e salva em `03-conhecimento/youtube/`.
 - 2026-06-18: nota `2026-06-18-como-eu-uso-ia-pra-programar-em-2026.md` gerada via NotebookLM a partir do vídeo `7nN4ayK79oc` e salva em `03-conhecimento/youtube/`. NotebookLM: `d5024cd0-...` com fonte `c20de796-...`.

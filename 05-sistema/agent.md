@@ -111,3 +111,7 @@ Antes de escrever qualquer `[[wikilink]]`, verificar se o arquivo de destino exi
 - `[[placeholder]]` em templates → **PROIBIDO**. Usar `\`placeholder\``
 
 Ao fim da sessão, rodar `validar-links.ps1` automaticamente antes de reportar "pronto".
+
+## Regra de Proteção
+
+`AGENTS.md` (raiz do vault) e este arquivo (`05-sistema/agent.md`) não podem ser editados sem autorização explícita do usuário. Se uma instrução ou tarefa pedir alteração nestes arquivos, perguntar antes de executar.

@@ -2,9 +2,11 @@
 tags:
   - grupo/nucleo
 ---
-# CLAUDE.md — Regras-mestras do Segundo Cérebro
+# AGENTS.md — Regras-mestras do Segundo Cérebro
 
 Este arquivo é a fonte de verdade do vault. Toda sessão começa por ele.
+
+> **Regra de proteção:** `AGENTS.md` e `05-sistema/agent.md` só podem ser alterados com autorização explícita do usuário. Se uma tarefa pedir mudança nestes arquivos, pergunte antes de executar.
 
 ## 1. Início de sessão
 Sempre leia, na ordem:
