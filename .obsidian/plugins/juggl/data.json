@@ -1,0 +1,62 @@
+{
+  "graphView": {
+    "filter": "",
+    "sortAlphabetical": false
+  },
+  "styles": [
+    {
+      "name": "Projetos",
+      "query": "tag:#tipo/projeto",
+      "color": "#FF6600",
+      "size": 15
+    },
+    {
+      "name": "Capturas",
+      "query": "tag:#tipo/captura",
+      "color": "#00CCCC",
+      "size": 8
+    },
+    {
+      "name": "Conhecimento",
+      "query": "tag:#tipo/conhecimento",
+      "color": "#9966FF",
+      "size": 12
+    },
+    {
+      "name": "Financeiro",
+      "query": "tag:#area/financeiro",
+      "color": "#00CC66",
+      "size": 10
+    },
+    {
+      "name": "Programacao",
+      "query": "tag:#area/programacao",
+      "color": "#3399FF",
+      "size": 10
+    },
+    {
+      "name": "Ferramentas",
+      "query": "tag:#ferramenta",
+      "color": "#FFD700",
+      "size": 10
+    },
+    {
+      "name": "Hermes",
+      "query": "tag:#projeto/hermes",
+      "color": "#FF3333",
+      "size": 18
+    },
+    {
+      "name": "Skills",
+      "query": "tag:#conceito/skill",
+      "color": "#FF33FF",
+      "size": 12
+    },
+    {
+      "name": "Agentes IA",
+      "query": "tag:#conceito/agente-ia",
+      "color": "#CC66FF",
+      "size": 14
+    }
+  ]
+}
