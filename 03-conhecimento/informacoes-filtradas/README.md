@@ -37,7 +37,7 @@ Dados externos já processados, internalizados e prontos para referência.
 
 - Temas financeiros / corretoras → anotações relevantes para `03-conhecimento/mercado-financeiro`
 - Fluxos com IA / LLM / agents → ligar com `03-conhecimento/programacao-e-ia`
-- Decisões da operação → inputs recorrentes em `05-sistema/comandos/input-rec-ouperacao.md`
+- Decisões da operação → registrar em `memory.md` via captura rápida
 
 ## Regras
 

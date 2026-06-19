@@ -24,7 +24,7 @@ Perfil, preferências e decisões datadas. Atualizado em 2026-06-18.
 - 2026-06-18: notebook-to-md reconstruído como skill base completa (antes era stub). SKILL.md com pipeline extrair → formatar/entregar, compartilha references/ e scripts/ com yt-to-notebook.
 - 2026-06-18: README.md do Skill-Hermes atualizado com tabela de skills e status.
 - 2026-06-18: tabela de roteamento extraída para `05-sistema/roteamento.md` (fonte única). AGENTS.md e memory.md referenciam ela.
-- 2026-06-18: fluxo de captura fluido implantado (`05-sistema/comandos/input-rec-ouperacao.md`).
+- 2026-06-18: fluxo de captura fluido implantado (`05-sistema/comandos/captura-rapida.ps1` + `vigia-clipboard.py`).
 - 2026-06-18: padronização de arquivos de visão geral para `README.md` por tema.
 - 2026-06-18: remoção automática de `Sem título`, `Untitled`, `.base` e `.canvas` fora dos pilares ativada por ação.
 - 2026-06-18: revisão de links ao criar nota ativada.
@@ -71,7 +71,7 @@ Perfil, preferências e decisões datadas. Atualizado em 2026-06-18.
 - 2026-06-18: três etapas da imagem implementadas sem criar arquivos antecipadamente:
   - informações filtradas em `03-conhecimento/informacoes-filtradas/README.md`
   - skills conectadas em `03-conhecimento/skills/README.md`
-  - inputs recorrentes da operação em `05-sistema/comandos/input-rec-ouperacao.md`
+  - inputs recorrentes da operação via `captura-rapida.ps1`
 
 ## Aprendizados
 - Repositórios externos não devem entrar no vault; apenas notas que os descrevem e linkam.

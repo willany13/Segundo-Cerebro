@@ -14,7 +14,7 @@ Fonte única para onde cada tipo de informação vai. Referenciado por `AGENTS.m
 | estudo / referência | `03-conhecimento/<tema>/` |
 | informação externa filtrada | `03-conhecimento/informacoes-filtradas/` |
 | skill / capability | `03-conhecimento/skills/README.md` |
-| input operacional recorrente | `05-sistema/comandos/input-rec-ouperacao.md` |
+| input operacional recorrente | `05-sistema/comandos/captura-rapida.ps1` → staging |
 | pensamento solto do dia | `04-capturas/<YYYY-MM-DD>.md` |
 | dado novo sobre mim (profissional/pessoal) | `01-eu/perfil.md` |
 

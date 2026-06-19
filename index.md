@@ -57,7 +57,7 @@ tags:
 - [[05-sistema/comandos/captura-rapida.ps1]]
 - [[05-sistema/comandos/encerrar-sessao.ps1]]
 - [[05-sistema/comandos/vigia-clipboard.py]]
-- [[05-sistema/comandos/input-rec-ouperacao.md]]
+- [[05-sistema/comandos/captura-rapida.ps1]]
 - [[05-sistema/comandos/revisao-semanal.ps1]]
 - [[05-sistema/comandos/processar-staging.ps1]]
 - [[05-sistema/staging/README.md]]
