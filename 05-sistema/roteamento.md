@@ -19,3 +19,9 @@ Fonte única para onde cada tipo de informação vai. Referenciado por `AGENTS.m
 | dado novo sobre mim (profissional/pessoal) | `01-eu/perfil.md` |
 
 Regra: nunca salve solto na raiz. Sempre dentro de um pilar. Consulte `index.md` antes de criar para não duplicar.
+
+## Formato de input operacional recorrente
+Registrar via `captura-rapida.ps1` com:
+- `fonte:` (PDF / imagem / link / site / nota)
+- `tipo:` (decisão / projeto / conhecimento / dado operacional)
+- `resumo:` 1-2 linhas
